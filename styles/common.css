@@ -1,0 +1,29 @@
+/* common css for all the web pages in this site */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+body{
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #003459;
+}
+
+::-webkit-scrollbar-track{
+    background: #ffffff;
+}
