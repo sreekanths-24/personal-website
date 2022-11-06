@@ -498,3 +498,105 @@ img:hover{
         display:  flex;
     }
 }
+
+
+
+
+
+
+
+
+    /* .navbar{
+        display: flex;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        justify-content: space-between;
+        background-color: #003459;
+        color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #main-logo{
+        position: fixed;
+        left: 1rem;
+    }
+
+    .brand-name{
+        font-size: 1.5rem;
+        margin: 1rem 2.5rem;
+    }
+
+    .navbar-links ul{
+        display: flex;
+    }
+
+    .navbar-links li{
+        list-style: none;
+    }
+
+    .navbar-links li a{
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+
+    .navbar-links li a:hover{
+        font-size: 1.2rem;
+        transition: 2s;
+    } 
+
+    .toggle-button{
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+
+
+    .toggle-button .bar{
+        height: 3px;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+
+        
+    
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    
+    i{
+        position: absolute;
+        left: 1rem;
+        top: 1.5rem;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .active{
+        display:  flex;
+    } */
