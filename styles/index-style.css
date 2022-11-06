@@ -280,7 +280,11 @@
 
 @media (max-width: 600px) {
 
-    .navbar{
+    img{
+        display: none;
+    }
+
+    /* .navbar{
         display: flex;
         width: 100%;
         position: fixed;
@@ -373,5 +377,5 @@
 
     .active{
         display:  flex;
-    }
+    } */
 }
