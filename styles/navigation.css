@@ -1,91 +1,127 @@
 
-  nav{
-    grid-area: header;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    background: #003459;
-    height: 70px;
-    width: 100%;
-  }
-  label.logo{
-    color: white;
-    font-size: 1.5rem;
-    position: fixed;
-    top: 1rem;
-    left: 1.5rem;
-    text-transform: uppercase;
-  }
-  nav ul{
-    float: right;
-    margin-right: 20px;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 70px;
-    margin: 0 5px;
-  }
-  nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  a.active,a:hover{
-    font-size: 20px;
-    background: #1b9bff;
-    transition: .5s;
-  }
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-  @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 10px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 600px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 68px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: #0082e6;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
-  }
-  
+nav{
+  	display: flex;
+  	justify-content: space-around;
+  	align-items: center;
+  	min-height: 9vh;
+    background-color: #003459;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.logo{
+	color: #ecebeb;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 22px;
+}
+
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+.nav-links a{
+	color: #ecebeb;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 14px;
+}
+
+.burger div{
+	width: 25px;
+	height: 3px;
+	background-color: #ecebeb;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+.burger{
+	display: none;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width:1415px){
+	.nav-links{
+		width: 50%;
+	}
+	
+}
+
+@media screen and (max-width:789px){
+
+	body{
+		overflow-x: hidden;
+	}
+	.nav-links{
+		position: absolute;
+		right: 0;
+		height: 92vh;
+		top: 9vh;
+		background-color: #12598b;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 70%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+
+	.nav-links li a{
+		font-size: 20px;
+	}
+	.nav-links li a:hover{
+		font-size: 35px;
+		transition: 2s;
+	}
+
+	.nav-links li{
+		opacity: 0;
+		z-index: 1;
+	}
+	.burger{
+		display: block;
+	}
+	
+}
+
+
+.nav-active{
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);	
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);	
+	
+}
+

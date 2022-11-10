@@ -1,4 +1,15 @@
-@media(min-width: 600px){
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {    
+    img{
+        display: none;
+    }
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
     main{
         display: grid;
         grid-template-columns: 2fr 4fr;
@@ -211,9 +222,29 @@
 
 /* ========================================================================================================  */
 
-@media (max-width: 600px) {
 
-    img{
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    *{
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    *{
+        display: none;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    *{
         display: none;
     }
 
