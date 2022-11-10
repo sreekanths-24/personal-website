@@ -44,6 +44,30 @@
         width: 82%;
         transition: 2s;
     }
+
+    /*about*/
+    #about{
+        grid-area: about;
+        /* background-color: aqua; */
+    }
+
+    #about h1{
+        font-size: 2.5rem;
+        display: block;
+        margin-top: 10px;
+        margin-left: 20px;
+        /* background-color: aliceblue; */
+    }
+
+    #about a{
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    #about p{
+        margin: 20px 20px;
+        font-size: 1rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

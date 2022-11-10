@@ -11,6 +11,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
     background-color: #ffffff;
 }
