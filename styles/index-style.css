@@ -1,12 +1,50 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {    
-    img{
+/* my website does not support below screen width 250px  */
+@media only screen and (max-width: 250px) { 
+    *{
         display: none;
     }
+} 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {    
+    /*common to this media queiry*/
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 9vh auto auto auto auto auto auto auto;
+        grid-template-areas: 
+            "nav"
+            "img"
+            "about"
+            "skills"
+            "education"
+            "portfolio"
+            "blogs"
+            ;
+    }
+    
+    /*my image*/
+    #my-image{
+        grid-area: img;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #my-image img{
+        width: 80%;
+        height: auto;
+        margin: 30px 0px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #my-image img:hover{
+        width: 82%;
+        transition: 2s;
+    }
 }
-
-
-
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -24,7 +62,7 @@
                 "footer footer";
     }
 
-    /*===========================images======================================*/
+    /*===========================my image======================================*/
     #my-image{
         grid-area: image;
         /* background-color: yellow; */
@@ -219,13 +257,6 @@
         background-color: lime;
     }
 }
-
-/* ========================================================================================================  */
-
-
-
-
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
