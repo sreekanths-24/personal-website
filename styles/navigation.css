@@ -39,6 +39,11 @@ nav{
 	font-size: 14px;
 }
 
+.nav-links a:hover{
+	font-size: 18px;
+	transition: 1s;
+}
+
 .burger div{
 	width: 25px;
 	height: 3px;
@@ -60,8 +65,14 @@ nav{
 	}
 	
 }
+@media screen and (max-width:1100px){
+	.nav-links{
+		width: 60%;
+	}
+	
+}
 
-@media screen and (max-width:789px){
+@media screen and (max-width:820px){
 
 	body{
 		overflow-x: hidden;
