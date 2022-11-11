@@ -36,7 +36,7 @@
             "PDSA";
     }
 
-    #education h1{
+    #education #hd1{
         grid-area: heading;
         font-size: 2.5rem;
         display: block;
@@ -44,6 +44,7 @@
         margin-left: 20px;
         /* background-color: aliceblue; */
     }
+
 
     #education em{
         grid-area: quote;
@@ -116,7 +117,7 @@
     }
 
     /*other qualifications heading*/
-    #education h2{
+    #education #hd2{
         grid-area: other;
         margin: 10px 20px;
     }
@@ -131,7 +132,11 @@
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    
+
+    #education #PDSA-card h2{
+        margin: 10px 10px;
+    }
+
 
     #education #PDSA-card p{
         padding: 0 10px 10px 10px;
@@ -180,10 +185,10 @@
 
     #about h1{
         font-size: 2.5rem;
-        display: block;
+        display: inline-block;
         margin-top: 10px;
         margin-left: 20px;
-        /* background-color: aliceblue; */
+        /* background-color: blue; */
     }
 
     #about a{
