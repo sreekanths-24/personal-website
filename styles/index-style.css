@@ -6,7 +6,7 @@
 } 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {    
+@media only screen and (min-width: 250px) and (max-width: 600px) {    
     /*==============common to this media queiry=====================*/
     main{
         display: grid;
@@ -21,6 +21,96 @@
             "portfolio"
             "contact";
     }
+    /*=================education====================*/
+    #education{
+        grid-area: education;  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "heading"
+            "quote"
+            "bhavans"
+            "awh";
+    }
+
+    #education h1{
+        grid-area: heading;
+        font-size: 2.5rem;
+        display: block;
+        margin-top: 10px;
+        margin-left: 20px;
+        /* background-color: aliceblue; */
+    }
+
+    #education em{
+        grid-area: quote;
+        display: block;
+        font-size: 1rem;
+        margin: 5px 20px;
+        text-align: center;
+    }
+
+    /*bhavans card*/
+    #education #bhavans-section{
+        grid-area: bhavans;
+        padding: 20px;
+    }
+
+    #education #bhavans-card{
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #education #bhavans-card h2{
+        margin: 10px 10px;
+    }
+
+    #education #bhavans-card p{
+        padding: 0 10px 10px 10px;
+        /* margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 50px; */
+    }
+
+    #education #bhavans-card img{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    /*awh card*/
+    #education #awh-section{
+        grid-area: awh;
+        padding: 20px;
+    }
+
+    #education #awh-card{
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #education #awh-card h2{
+        margin: 10px 10px;
+    }
+
+    #education #awh-card p{
+        padding: 0 10px 10px 10px;
+        /* margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 50px; */
+    }
+
+    #education #awh-card img{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
     
     /*=================my image=======================*/
     #my-image{
@@ -85,7 +175,7 @@
         grid-area: header;
         font-size: 2.5rem;
         display: block;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: 20px;
         /* margin-bottom: 40px; */
         /* background-color: aliceblue; */
@@ -173,18 +263,21 @@
     #skills #git-logo{
         width: 60px;
         height: auto;
+        margin-bottom: 80px;
     }
 
     #skills #github-logo{
         width: 60px;
         height: auto;
+        margin-bottom: 80px;
+
     }
 
     
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 768px){
     *{
         display: none;
     }
@@ -192,14 +285,14 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     *{
         display: none;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
    
     *{
         display: none;
