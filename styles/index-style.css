@@ -23,6 +23,77 @@
             "footer";
     }
 
+    /*=================footer======================*/
+    footer{
+        grid-area: footer;
+        background-color: #00171f;
+        color: rgb(230, 220, 220);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "thanks"
+        "links"
+        "social";
+    }
+    
+    footer #thanks{
+        grid-area: thanks;
+
+    }
+
+    footer #quick-links{
+        grid-area: links;
+    }
+
+    footer #contact-info{
+        grid-area: social;
+    }
+
+    footer #social-links{
+        font-size: 3rem;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    footer #social-links i{
+        margin: 0 10px;
+    }
+
+
+    footer ul{
+        
+        margin: 20px;
+        font-size: 1rem;
+    
+    }
+    footer ul li{
+        list-style: none;
+    }
+
+    footer h2{
+        margin: 20px;
+        font-size: 2.5rem;
+    }
+
+    footer p{
+        margin: 20px;
+        font-size: 1.5rem;
+    }
+    footer #mes{
+        font-size: 1rem;
+    }
+    footer a{
+        color: rgb(230, 220, 220);
+
+    }
+
+    footer .quick-nav-links a{
+        color: rgb(230, 220, 220);
+        font-size: 1.5rem;
+    }
+
+
     /*=================my image=======================*/
     #my-image{
         grid-area: img;
@@ -473,7 +544,32 @@
         color: white;
     }
 
-    
+     /*=================contact me ====================*/
+
+     #contact-me{
+        grid-area: contact;
+        background-image: linear-gradient(#d1ebff, white);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "heading"
+            "form";
+    }
+
+    #contact-me h1{
+        grid-area: heading;
+        font-size: 2.5rem;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    #contact-me iframe{
+        grid-area: form;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
