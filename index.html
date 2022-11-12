@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- == Some usual meta tags == -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="made by Sreekanth S, progrmmer, coder, job hunt, web developer">
+    <meta name="description" content="This is the official Portfolio website of Sreekanth S. Thanks for visiting.">
     
+    <!-- == OSWALD font from google font for headings == -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     
+    <!-- == POPPINS font for everything else == -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     
+    <!-- == All the majour style sheets == -->
     <link rel="stylesheet" href="styles/all.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index-style.css">
-    
     <link rel="stylesheet" href="styles/navigation.css">
-     
+
+    <!-- ==THE title of this website== -->
     <title>Sreekanth S | Portfolio</title>
 </head>
 <body>
     <main>
+        <!-- == The navbar begins == -->
         <nav>
             
             <div class="logo">
-                <h4>SREEKANTH S</h4>
+                <h4><i class="fa-brands fa-react"></i> SREEKANTH S</h4>
             </div>
             <ul class="nav-links">
                 <li><a href="#about">ABOUT</a></li>
@@ -42,33 +49,39 @@
                 <div class="line3"></div>
             </div>
         </nav>
+        <!-- == The navbar ends == -->
         
+        <!-- == The my image begins == -->
         <div id="my-image">
             <img src="sources/images/me.jpg" alt="sreekanth' picture"> 
             
         </div>
+        <!-- == The my image ends == -->
         
+        <!-- == The about section begins == -->
         <div id="about">
             <h1>About Me</h1>
             
-            <p>Hello everyone!! I am Sreekanth S. I am a Third-Year CSE Undergraduate Student at AWH Engineering College. I am passionate about web development and is currently learning the necassery skills and tools required to become a Full Stack Developer. <br><br>
+            <p>
+                Hello everyone!! I am Sreekanth S. I am a Third-Year CSE Undergraduate Student at AWH Engineering College. I am a self taught Front End Development and is currently learning the necassery skills and tools required to become a Full Stack Developer. <br><br>
                 
-                
-                I have worked on many web development projects, mainly on the Front End side. You can see my projects on the <a href="#">PORTFOLIO tab</a> above or you can check out my <a href="https://www.github.com/sreekanths-24">Github profile</a>.
+                I have worked on many web development projects, mainly on the Front End side. You can see my projects on the <a href="#portfolio">PROJECTS tab</a> above or you can check out my <a href="https://www.github.com/sreekanths-24">Github profile</a>.
                 <br><br>
                 
-                I am 20 years old and I focus on making websites that help others to learn new things and help them become a better version of themselves. <br><br>
+                I am 20 years old and I focus on making websites that help others become a better version of themselves. <br><br>
                 
                 <i class="fa-solid fa-envelope"></i> Email : <a href="mailto:sreekanthsanthosh17@gmail.com">sreekanthsanthosh17@gmail.com</a><br>
                 <i class="fa-solid fa-location-dot"></i> Place : Kozhikode, Kerala, India.
             </p>
         </div>
-        
+        <!-- == The about section ends == -->
+
+        <!-- == The skills section begins == -->
         <div id="skills">
             
             <div id="skill-head"><h1>My Skills</h1></div>
 
-            <div id="skill-body">
+                <div id="skill-body">
 
                     <div id="html5">
                         <div id="html-card">
@@ -113,8 +126,10 @@
                     </div>
                     
                 </div>
-            </div>
+        </div>
+        <!-- == The skills section ends == -->
         
+        <!-- == The education begins == -->
         <div id="education">
             <h1 id="hd1">Education</h1>
             
@@ -144,28 +159,51 @@
 
             <h1 id="hd2">Other Qualifications</h1>
 
-            <div id="PDSA-section">
-                <div id="PDSA-card">
-                    <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS26S43280400NPTEL2201088439" target="_blank">
-
-                        <img src="sources/images/PDSA.jpg" alt="pdsa certificate">
-                    </a>
+            <div id="PDSA-e-section">
+                <div id="PDSA-e-card">
+                    <img src="sources/images/PDSA.jpg" alt="pdsa certificate">
                     <h2>MOOC Course | NPTEL</h2>
                     <p>Programing, Data Structures and Algorithms Using Python | Completed on March 2022</p>
 
                 </div>
             </div>
         </div>
+        <!-- == The education ends == -->
+
+        <!-- == The projects begins == -->
+        <div id="portfolio">
+            
+            <h1>Projects Made</h1>
+            
+            <div id="PDSA-section">
+                <div id="PDSA-card">
+                    <img src="sources/projects-images/PDSA-site.png" alt="picture of PDSA website">
+                    <h2>PDSA Textbook</h2>
+                    <p>Website to help my friends complete the NPTEL course PDSA using Python.</p>
+                    <a href="https://github.com/sreekanths-24/PDSA-Textbook" class="p-links"><i class="fa-brands fa-github"></i> View Code</a>
+                    <a href="https://sreekanths-24.github.io/PDSA-Textbook/index.html" class="p-links"><i class="fa-solid fa-link"></i> View Website</a>
+                </div>
+            </div>
+
+            <div id="gc-section">
+                <div id="gc-card">
+                    <img src="sources/projects-images/google-clone.png" alt="picture of google clone">
+                    <h2>Google Clone</h2>
+                    <p>A clone of google's search engine. best if you open it on laptop or pc.</p>
+                    <a href="https://github.com/sreekanths-24/google-clone" class="p-links"><i class="fa-brands fa-github"></i> View Code</a>
+                    <a href="https://sreekanths-24.github.io/google-clone/index.html" class="p-links"><i class="fa-solid fa-link"></i> View Website</a>
+                </div>
+            </div>
+
+            <div id="veiw-more-p">
+                <p><a href="https://github.com/sreekanths-24?tab=repositories">Veiw More <i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+
+        </div>
+        <!-- == The projects ends == -->
         
         <!--         
         
-        <div id="portfolio">
-            <h2>portfolio</h2>
-        </div>
-        
-        <div id="blogs">
-            <h2>blogs</h2>
-        </div>
         
         <footer id="footer-links">
             <h1>Footer</h1>
