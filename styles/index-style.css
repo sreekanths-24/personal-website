@@ -480,10 +480,11 @@
         background-image: linear-gradient(#d1ebff, white);
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
         grid-template-areas: 
             "heading"
-            "form";
+            "form"
+            "myform";
     }
 
     #contact-me h1{
@@ -495,9 +496,51 @@
         margin-bottom: 20px;
     }
 
-    #contact-me iframe{
+    #contact-me #my-form{
         grid-area: form;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 30px;
+    } 
+    #contact-me form{
+        border-radius: 20px;
+        text-align: center;
+        width: 100%;
+        min-height: 50px;
+        background-color: #37caec;
+        padding: 10px 0;
+        border: 1px solid black;
     }
+
+    #contact-me input[type=button],
+    #contact-me input[type=reset]{
+        background-color: #d1ebff;
+    }
+
+    #contact-me textarea{
+        width: 90%;
+        min-height: 12rem;
+        padding: 10px 20px;
+        outline: none;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 10px;
+        resize: none;
+        font-size: 1.5rem;
+
+    }
+    #contact-me input{
+        margin: 10px;
+        width: 90%;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        outline: none;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    
 
     
     /*=================footer======================*/
@@ -1048,6 +1091,7 @@
         color: white;
     }
 
+    
      /*=================contact me ====================*/
 
      #contact-me{
@@ -1055,25 +1099,67 @@
         background-image: linear-gradient(#d1ebff, white);
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
         grid-template-areas: 
             "heading"
-            "form";
+            "form"
+            "myform";
     }
 
     #contact-me h1{
         grid-area: heading;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         display: block;
         margin-top: 20px;
         margin-left: 20px;
         margin-bottom: 20px;
     }
 
-    #contact-me iframe{
+    #contact-me #my-form{
         grid-area: form;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 30px;
+    } 
+    #contact-me form{
+        border-radius: 20px;
+        text-align: center;
+        width: 100%;
+        min-height: 50px;
+        background-color: #37caec;
+        padding: 10px 0;
+        border: 1px solid black;
     }
 
+    #contact-me input[type=button],
+    #contact-me input[type=reset]{
+        background-color: #d1ebff;
+    }
+
+    #contact-me textarea{
+        width: 90%;
+        min-height: 12rem;
+        padding: 10px 20px;
+        outline: none;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 10px;
+        resize: none;
+        font-size: 1.5rem;
+
+    }
+    #contact-me input{
+        margin: 10px;
+        width: 90%;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        outline: none;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    
 
     /*=================footer======================*/
     footer{

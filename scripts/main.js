@@ -1,3 +1,4 @@
+//navbar toggle
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -24,6 +25,7 @@ const navSlide = () => {
 
 }
 
+//smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
