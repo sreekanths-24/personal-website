@@ -23,77 +23,6 @@
             "footer";
     }
 
-    /*=================footer======================*/
-    footer{
-        grid-area: footer;
-        background-color: #00171f;
-        color: rgb(230, 220, 220);
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: 
-        "thanks"
-        "links"
-        "social";
-    }
-    
-    footer #thanks{
-        grid-area: thanks;
-
-    }
-
-    footer #quick-links{
-        grid-area: links;
-    }
-
-    footer #contact-info{
-        grid-area: social;
-    }
-
-    footer #social-links{
-        font-size: 3rem;
-        padding: 20px;
-        padding-top: 0;
-    }
-
-    footer #social-links i{
-        margin: 0 10px;
-    }
-
-
-    footer ul{
-        
-        margin: 20px;
-        font-size: 1rem;
-    
-    }
-    footer ul li{
-        list-style: none;
-    }
-
-    footer h2{
-        margin: 20px;
-        font-size: 2.5rem;
-    }
-
-    footer p{
-        margin: 20px;
-        font-size: 1.5rem;
-    }
-    footer #mes{
-        font-size: 1rem;
-    }
-    footer a{
-        color: rgb(230, 220, 220);
-
-    }
-
-    footer .quick-nav-links a{
-        color: rgb(230, 220, 220);
-        font-size: 1.5rem;
-    }
-
-
     /*=================my image=======================*/
     #my-image{
         grid-area: img;
@@ -570,14 +499,652 @@
         grid-area: form;
     }
 
+    
+    /*=================footer======================*/
+    footer{
+        grid-area: footer;
+        background-color: #00171f;
+        color: rgb(230, 220, 220);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "thanks"
+        "links"
+        "social";
+    }
+    
+    footer #thanks{
+        grid-area: thanks;
+
+    }
+
+    footer #quick-links{
+        grid-area: links;
+    }
+
+    footer #contact-info{
+        grid-area: social;
+    }
+
+    footer #social-links{
+        font-size: 3rem;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    footer #social-links i{
+        margin: 0 10px;
+    }
+
+
+    footer ul{
+        
+        margin: 20px;
+        font-size: 1rem;
+    
+    }
+    footer ul li{
+        list-style: none;
+    }
+
+    footer h2{
+        margin: 20px;
+        font-size: 2.5rem;
+    }
+
+    footer p{
+        margin: 20px;
+        font-size: 1.5rem;
+    }
+    footer #mes{
+        font-size: 1rem;
+    }
+    footer a{
+        color: rgb(230, 220, 220);
+
+    }
+
+    footer .quick-nav-links a{
+        color: rgb(230, 220, 220);
+        font-size: 1.5rem;
+    }
+
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px){
-    *{
-        display: none;
+    
+    /*==============common to this media queiry=====================*/
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 9vh auto auto auto auto auto auto auto;
+        grid-template-areas: 
+            "nav"
+            "img"
+            "about"
+            "skills"
+            "education"
+            "portfolio"
+            "contact"
+            "footer";
+    }
+
+    
+
+    /*=================my image=======================*/
+    #my-image{
+        grid-area: img;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #my-image img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    /*==================about==========================*/
+    #about{
+        grid-area: about;
+        background-image: linear-gradient(white, #d1ebff);
+    }
+
+    #about h1{
+        font-size: 3.5rem;
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 20px;
+        /* background-color: blue; */
+    }
+
+    #about a{
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    #about p{
+        margin: 20px 20px;
+        font-size: 1.5rem;
+    }
+    /*===================skills============================*/
+    #skills{
+        grid-area: skills;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "heading"
+            "body";
+        background-image: linear-gradient(#d1ebff, white);
+    }
+
+    #skills h1{
+        font-size: 3.5rem;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        /* margin-bottom: 40px; */
+        /* background-color: aliceblue; */
+    }
+
+    #skill-head{
+        grid-area: heading;
+        /* background-color: #; */
+    }
+
+    #skill-body{
+        grid-area: body;
+        /* background-color: #37caec; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "html css"
+            "python c"
+            "git github";   
+        padding: 10px; 
+        margin: 20px 0;
+    }
+
+    #python3, #html5, #css3, #git-vcs, #github, #clang{
+        background-color: #37caec;
+
+    }
+
+
+    /*html block*/
+    #skills #html5{
+        grid-area: html;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 25px;
+    }
+    /*css block*/
+    #skills #css3{
+        grid-area: css;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-right-radius: 25px;
+
+    }
+
+
+    /*python block*/
+    #skills #python3{
+        grid-area: python;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*c block*/    
+    #skills #clang{
+        grid-area: c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*git block*/    
+    #skills #git-vcs{
+        grid-area: git;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 25px;
+    }
+    /*github block*/    
+    #skills #github{
+        grid-area: github;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-right-radius: 25px;
     }
     
+    /*skill images*/
+    #skills #html5-logo{
+        width: 10rem;
+        height: auto;
+    }
+    
+    #skills #css3-logo{
+        width: 7rem;
+        height: auto;
+    }
+
+    #skills #python3-logo{
+        width: 9rem;
+        height: auto;
+    }
+
+
+    #skills #clang-logo{
+        width: 9rem;
+        height: auto;
+    }
+
+    #skills #git-logo{
+        width: 9rem;
+        height: auto;
+        /* margin-bottom: 80px; */
+    }
+
+    #skills #github-logo{
+        width: 9rem;
+        height: auto;
+        /* margin-bottom: 80px; */
+
+    }
+
+    #html-card, #css-card, #python-card, #git-card, #github-card, #c-card{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    /*=================education====================*/
+    #education{
+        grid-area: education;  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+            "heading"
+            "quote"
+            "bhavans"
+            "awh"
+            "other"
+            "PDSA";
+            background-image: linear-gradient(white, #37caec);
+        
+    }
+
+    #education #hd1{
+        grid-area: heading;
+        font-size: 3.5rem;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        /* background-color: aliceblue; */
+    }
+
+
+    #education em{
+        grid-area: quote;
+        display: block;
+        font-size: 2rem;
+        margin: 15px 20px;
+        text-align: center;
+    }
+
+    /*bhavans card*/
+    #education #bhavans-section{
+        grid-area: bhavans;
+        padding: 30px 20px;
+    }
+
+    #education #bhavans-section:hover{
+        padding: 30px 10px;
+        transition: 2s;
+    }
+
+    #education #bhavans-card{
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+    }
+
+    #education #bhavans-card h2{
+        margin: 10px 10px;
+        font-size: 2.5rem;
+    }
+
+    #education #bhavans-card p{
+        padding: 0 10px 10px 10px;
+        font-size: 1.5rem;
+    }
+
+    #education #bhavans-card img{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    /*awh card*/
+    #education #awh-section{
+        grid-area: awh;
+        padding: 30px 20px;
+    }
+
+    #education #awh-section:hover{
+        padding: 30px 10px;
+        transition: 2s;
+    }
+
+    #education #awh-card{
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+    }
+
+    #education #awh-card h2{
+        margin: 10px 10px;
+        font-size: 2.5rem;
+    }
+
+    #education #awh-card p{
+        padding: 0 10px 10px 10px;
+        font-size: 1.5rem;
+    }
+
+    #education #awh-card img{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    /*other qualifications heading*/
+    #education #hd2{
+        grid-area: other;
+        margin: 10px 20px;
+        font-size: 2.5rem;
+    }
+    
+    /*PDSA card*/
+    #education #PDSA-e-section{
+        grid-area: PDSA;
+        padding: 30px 20px;
+    }
+
+    #education #PDSA-e-section:hover{
+        padding: 30px 10px;
+        transition: 2s;
+    }
+
+    #education #PDSA-e-card{
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+    }
+
+    #education #PDSA-e-card h2{
+        margin: 10px 10px;
+        font-size: 2.5rem;
+    }
+
+    #education #PDSA-e-card p{
+        padding: 0 10px 10px 10px;
+        font-size: 1.5rem;
+    }
+
+    #education #PDSA-e-card img{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+     /*=================portfolio======================*/
+     #portfolio{
+        grid-area: portfolio;
+        background-image: linear-gradient(#37caec, #d1ebff);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "heading"
+            "p1"
+            "p2"
+            "more";
+    }
+
+    #portfolio h1{
+        grid-area: heading;
+        font-size: 3.5rem;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        /* background-color: blue; */
+    }
+
+    /*PDSA website card*/
+    #portfolio #PDSA-section{
+        grid-area: p1;
+        padding: 20px;
+    }
+
+    #portfolio #PDSA-section:hover{
+        padding: 10px;
+        transition: 2s;
+    }
+
+    #portfolio #PDSA-card{
+        border-radius: 15px;
+        background-color: rgb(247, 245, 245);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #portfolio #PDSA-card h2{
+        margin: 10px 10px;
+        font-size: 2.5rem;
+    }
+
+    #portfolio #PDSA-card p{
+        padding: 0 10px 10px 10px;
+        font-size: 1.5rem;
+    }
+
+    #portfolio #PDSA-card img{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    #portfolio #PDSA-card .p-links{
+        padding: 10px;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+    }
+        
+    /*google clone card*/
+    #portfolio #gc-section{
+        grid-area: p2;
+        padding: 20px;
+    }
+
+    #portfolio #gc-section:hover{
+        padding: 10px;
+        transition: 2s;
+    }
+
+    #portfolio #gc-card{
+        border-radius: 15px;
+        background-color: rgb(247, 245, 245);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #portfolio #gc-card h2{
+        margin: 10px 10px;
+        font-size: 2.5rem;
+    }
+
+    #portfolio #gc-card p{
+        padding: 0 10px 10px 10px;
+        font-size: 1.5rem;
+    }
+
+    #portfolio #gc-card img{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    #portfolio #gc-card .p-links{
+        padding: 10px;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+    }
+    /*========== veiw more button ============*/
+    #portfolio #veiw-more-p{
+        grid-area: more;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #portfolio #veiw-more-p p{
+        font-size: 2rem;
+        width: 50%;
+        margin: 20px auto;
+        min-height: 3vh;
+        background-color: #125488;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 0.5rem 1rem;
+    }
+    
+    #portfolio #veiw-more-p p a{
+        color: white;
+    }
+
+     /*=================contact me ====================*/
+
+     #contact-me{
+        grid-area: contact;
+        background-image: linear-gradient(#d1ebff, white);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "heading"
+            "form";
+    }
+
+    #contact-me h1{
+        grid-area: heading;
+        font-size: 3.5rem;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    #contact-me iframe{
+        grid-area: form;
+    }
+
+
+    /*=================footer======================*/
+    footer{
+        grid-area: footer;
+        background-color: #00171f;
+        color: rgb(230, 220, 220);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "thanks"
+        "links"
+        "social";
+    }
+    
+    footer #thanks{
+        grid-area: thanks;
+
+    }
+
+    footer #quick-links{
+        grid-area: links;
+    }
+
+    footer #contact-info{
+        grid-area: social;
+    }
+
+    footer #social-links{
+        font-size: 3rem;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    footer #social-links i{
+        margin: 0 10px;
+    }
+
+
+    footer ul{
+        
+        margin: 20px;
+        font-size: 1rem;
+    
+    }
+    footer ul li{
+        list-style: none;
+    }
+
+    footer h2{
+        margin: 20px;
+        font-size: 2.5rem;
+    }
+
+    footer p{
+        margin: 20px;
+        font-size: 1.5rem;
+    }
+    footer #mes{
+        font-size: 1rem;
+    }
+    footer a{
+        color: rgb(230, 220, 220);
+
+    }
+
+    footer .quick-nav-links a{
+        color: rgb(230, 220, 220);
+        font-size: 1.5rem;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
