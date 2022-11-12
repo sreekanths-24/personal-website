@@ -856,3 +856,133 @@ navSlide();
         grid-area: footer;
         background-color: lime;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #skills{
+        display: grid;
+        grid-area: skills;
+        background-color:  #00a8e8;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "header header"
+            "html css"
+            "python c"
+            "git github";    
+    }
+    /*heading*/
+    #skills h1{
+        grid-area: header;
+        font-size: 2.5rem;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        /* margin-bottom: 40px; */
+        /* background-color: aliceblue; */
+    }
+
+    #skills img{
+        margin: 50px 20px;
+    }
+
+    /*html block*/
+    #skills #html5{
+        grid-area: html;
+        /* background-color: antiquewhite; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*css block*/
+    #skills #css3{
+        grid-area: css;
+        /* background-color:aquamarine; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*python block*/
+    #skills #python3{
+        grid-area: python;
+        /* background-color:yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*c block*/    
+    #skills #clang{
+        grid-area: c;
+        /* background-color:yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*git block*/    
+    #skills #git-vcs{
+        grid-area: git;
+        /* background-color:yellowgreen; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*github block*/    
+    #skills #github{
+        grid-area: github;
+        /* background-color: white; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /*skill images*/
+    #skills #html5-logo{
+        width: 85px;
+        height: auto;
+    }
+    
+    #skills #css3-logo{
+        width: 0px;
+        height: auto;
+    }
+
+    #skills #python3-logo{
+        width: 60px;
+        height: auto;
+    }
+
+    #skills #css3-logo{
+        width: 60px;
+        height: auto;
+    }
+
+    #skills #clang-logo{
+        width: 60px;
+        height: auto;
+    }
+
+    #skills #git-logo{
+        width: 60px;
+        height: auto;
+        margin-bottom: 80px;
+    }
+
+    #skills #github-logo{
+        width: 60px;
+        height: auto;
+        margin-bottom: 80px;
+
+    }

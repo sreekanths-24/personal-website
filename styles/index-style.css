@@ -21,6 +21,194 @@
             "portfolio"
             "contact";
     }
+    
+    /*=================my image=======================*/
+    #my-image{
+        grid-area: img;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #my-image img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    /*==================about==========================*/
+    #about{
+        grid-area: about;
+        /* background-color: aqua; */
+    }
+
+    #about h1{
+        font-size: 2.5rem;
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 20px;
+        /* background-color: blue; */
+    }
+
+    #about a{
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    #about p{
+        margin: 20px 20px;
+        font-size: 1rem;
+    }
+    /*===================skills============================*/
+    #skills{
+        grid-area: skills;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "heading"
+            "body";
+        background-color: #d1ebff;
+    }
+
+    #skills h1{
+        font-size: 2.5rem;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        /* margin-bottom: 40px; */
+        /* background-color: aliceblue; */
+    }
+
+    #skill-head{
+        grid-area: heading;
+        /* background-color: #; */
+    }
+
+    #skill-body{
+        grid-area: body;
+        /* background-color: #37caec; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "html css"
+            "python c"
+            "git github";   
+        padding: 10px; 
+        margin: 20px 0;
+    }
+
+    #python3, #html5, #css3, #git-vcs, #github, #clang{
+        background-color: #37caec;
+
+    }
+
+
+    /*html block*/
+    #skills #html5{
+        grid-area: html;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 10px;
+    }
+    /*css block*/
+    #skills #css3{
+        grid-area: css;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-right-radius: 10px;
+
+    }
+
+
+    /*python block*/
+    #skills #python3{
+        grid-area: python;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*c block*/    
+    #skills #clang{
+        grid-area: c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*git block*/    
+    #skills #git-vcs{
+        grid-area: git;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 10px;
+
+    }
+    /*github block*/    
+    #skills #github{
+        grid-area: github;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-right-radius: 10px;
+
+    }
+    
+    /*skill images*/
+    #skills #html5-logo{
+        width: 85px;
+        height: auto;
+    }
+    
+    #skills #css3-logo{
+        width: 0px;
+        height: auto;
+    }
+
+    #skills #python3-logo{
+        width: 60px;
+        height: auto;
+    }
+
+    #skills #css3-logo{
+        width: 60px;
+        height: auto;
+    }
+
+    #skills #clang-logo{
+        width: 60px;
+        height: auto;
+    }
+
+    #skills #git-logo{
+        width: 60px;
+        height: auto;
+        /* margin-bottom: 80px; */
+    }
+
+    #skills #github-logo{
+        width: 60px;
+        height: auto;
+        /* margin-bottom: 80px; */
+
+    }
+
+    #html-card, #css-card, #python-card, #git-card, #github-card, #c-card{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
     /*=================education====================*/
     #education{
         grid-area: education;  
@@ -153,169 +341,6 @@
         padding: 10px;
         transition: 2s;
     }
-
-    
-    /*=================my image=======================*/
-    #my-image{
-        grid-area: img;
-        /* background-color: aqua; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #my-image img{
-        width: 80%;
-        height: auto;
-        margin: 30px 0px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    #my-image img:hover{
-        width: 82%;
-        transition: 2s;
-    }
-
-    /*==================about==========================*/
-    #about{
-        grid-area: about;
-        /* background-color: aqua; */
-    }
-
-    #about h1{
-        font-size: 2.5rem;
-        display: inline-block;
-        margin-top: 10px;
-        margin-left: 20px;
-        /* background-color: blue; */
-    }
-
-    #about a{
-        font-family: 'Poppins', sans-serif;
-
-    }
-
-    #about p{
-        margin: 20px 20px;
-        font-size: 1rem;
-    }
-    /*===================skills============================*/
-    #skills{
-        display: grid;
-        grid-area: skills;
-        background-color:  #00a8e8;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: 
-            "header header"
-            "html css"
-            "python c"
-            "git github";    
-    }
-    /*heading*/
-    #skills h1{
-        grid-area: header;
-        font-size: 2.5rem;
-        display: block;
-        margin-top: 20px;
-        margin-left: 20px;
-        /* margin-bottom: 40px; */
-        /* background-color: aliceblue; */
-    }
-
-    #skills img{
-        margin: 50px 20px;
-    }
-
-    /*html block*/
-    #skills #html5{
-        grid-area: html;
-        /* background-color: antiquewhite; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /*css block*/
-    #skills #css3{
-        grid-area: css;
-        /* background-color:aquamarine; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /*python block*/
-    #skills #python3{
-        grid-area: python;
-        /* background-color:yellow; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /*c block*/    
-    #skills #clang{
-        grid-area: c;
-        /* background-color:yellow; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /*git block*/    
-    #skills #git-vcs{
-        grid-area: git;
-        /* background-color:yellowgreen; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /*github block*/    
-    #skills #github{
-        grid-area: github;
-        /* background-color: white; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    /*skill images*/
-    #skills #html5-logo{
-        width: 85px;
-        height: auto;
-    }
-    
-    #skills #css3-logo{
-        width: 0px;
-        height: auto;
-    }
-
-    #skills #python3-logo{
-        width: 60px;
-        height: auto;
-    }
-
-    #skills #css3-logo{
-        width: 60px;
-        height: auto;
-    }
-
-    #skills #clang-logo{
-        width: 60px;
-        height: auto;
-    }
-
-    #skills #git-logo{
-        width: 60px;
-        height: auto;
-        margin-bottom: 80px;
-    }
-
-    #skills #github-logo{
-        width: 60px;
-        height: auto;
-        margin-bottom: 80px;
-
-    }
-
     
 }
 
