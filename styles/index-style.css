@@ -50,6 +50,8 @@
         width: 100%;
         height: 45vh;
         background-size: cover;
+        background-repeat: no-repeat;
+
         background-image: url("../sources/images/me.jpg");
         position: relative;
         top: 0;
