@@ -251,7 +251,7 @@
 
     #education #bhavans-section:hover{
         padding: 10px;
-        transition: 2s;
+        transition: 0.5s;
     }
 
     #education #bhavans-card{
@@ -305,7 +305,7 @@
     
     #education #awh-section:hover{
         padding: 10px;
-        transition: 2s;
+        transition: 0.5s;
     }
 
     /*other qualifications heading*/
@@ -346,7 +346,7 @@
     
     #education #PDSA-e-section:hover{
         padding: 10px;
-        transition: 2s;
+        transition: 0.5s;
     }
 
      /*=================portfolio======================*/
@@ -380,7 +380,7 @@
 
     #portfolio #PDSA-section:hover{
         padding: 10px;
-        transition: 2s;
+        transition: 0.5s;
     }
 
     #portfolio #PDSA-card{
@@ -420,7 +420,7 @@
 
     #portfolio #gc-section:hover{
         padding: 10px;
-        transition: 2s;
+        transition: 0.5s;
     }
 
     #portfolio #gc-card{
@@ -509,14 +509,23 @@
         text-align: center;
         width: 100%;
         min-height: 50px;
-        background-color: #37caec;
+        background-image: linear-gradient(#4adede ,#1ca7ec);
+
         padding: 10px 0;
         border: 1px solid black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     }
+
 
     #contact-me input[type=button],
     #contact-me input[type=reset]{
-        background-color: #d1ebff;
+        background-color: #003459;
+        color: white;
+        width: 40%;
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 2rem;
     }
 
     #contact-me textarea{
@@ -541,6 +550,12 @@
         border: 1px solid black;
     }
     
+    #contact-me input:hover,#contact-me textarea:hover{
+        margin: 5px;
+        width: 95%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: 0.5s;
+    }
 
     
     /*=================footer======================*/
@@ -598,7 +613,7 @@
 
     footer p{
         margin: 20px;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     footer #mes{
         font-size: 1rem;
@@ -862,7 +877,7 @@
 
     #education #bhavans-section:hover{
         padding: 30px 10px;
-        transition: 2s;
+        transition: 0.5s;
     }
 
     #education #bhavans-card{
@@ -896,7 +911,7 @@
 
     #education #awh-section:hover{
         padding: 30px 10px;
-        transition: 2s;
+        transition: 0.5s;
     }
 
     #education #awh-card{
@@ -937,7 +952,7 @@
 
     #education #PDSA-e-section:hover{
         padding: 30px 10px;
-        transition: 2s;
+        transition: 0.5s;
     }
 
     #education #PDSA-e-card{
@@ -994,7 +1009,7 @@
 
     #portfolio #PDSA-section:hover{
         padding: 10px;
-        transition: 2s;
+        transition: 0.5s;
     }
 
     #portfolio #PDSA-card{
@@ -1036,7 +1051,7 @@
 
     #portfolio #gc-section:hover{
         padding: 10px;
-        transition: 2s;
+        transition: 0.5s;
     }
 
     #portfolio #gc-card{
