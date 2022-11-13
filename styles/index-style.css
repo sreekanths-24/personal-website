@@ -23,6 +23,22 @@
             "contact"
             "footer";
     }
+    .logo2{
+        grid-area: nav;
+        background-color: #003459;
+        /* color: white; */
+        color: #ecebeb;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 22px;;
+
+    }
+
+    .logo2 h4{
+        display: block;
+        margin-top: 1.25rem;
+        margin-left: 2rem;
+    }
 
     #parallax{
         grid-area: parallax;
