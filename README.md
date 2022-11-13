@@ -11,7 +11,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
 ## Extra Frameworks Used
-ScrollRevealjs, Typedjs, particlesjs
+ScrollRevealjs, Typedjs and Font Awsome
 
 <h2> Website :- 
 <a href="https://sreekanths-24.github.io/portfolio" target="_blank">Check It Out</a>
