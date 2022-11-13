@@ -11,16 +11,25 @@
     main{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 9vh auto auto auto auto auto auto auto;
+        grid-template-rows: 9vh auto auto 300px auto auto auto auto auto;
         grid-template-areas: 
             "nav"
             "img"
             "about"
+            "parallax"
             "skills"
             "education"
             "portfolio"
             "contact"
             "footer";
+    }
+
+    #parallax{
+        grid-area: parallax;
+        background-image: url(../sources/images/me2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        
     }
 
     /*=================my image=======================*/
