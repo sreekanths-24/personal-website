@@ -51,7 +51,7 @@
         height: 400px;
         background-size: cover;
         background-repeat: no-repeat;
-
+        transition: ease;
         background-image: url("../sources/images/me.jpg");
         position: relative;
         top: 0;
