@@ -1,12 +1,4 @@
-/* my website does not support below screen width 250px  */
-@media only screen and (max-width: 250px) { 
-    *{
-        display: none;
-    }
-} 
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 250px) and (max-width: 600px) {    
+   
     /*==============common to this media queiry=====================*/
     main{
         display: grid;
@@ -683,33 +675,3 @@
     }
 
 
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px){
-    *{
-        display: none;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px){
-    *{
-        display: none;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px){
-   
-    *{
-        display: none;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    *{
-        display: none;
-    }
-}
