@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="made by Sreekanth S, progrmmer, coder, job hunt, web developer">
     <meta name="description" content="This is the official Portfolio website of Sreekanth S. Thanks for visiting.">
+
+    <!-- ==favicon== -->
+    <link rel="icon" type="image/x-icon" href="sources/favicon/favicon.ico">
     
     <!-- == OSWALD font from google font for headings == -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +26,9 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index-style.css">
     <link rel="stylesheet" href="styles/navigation.css">
+
+    <!-- == Scroll reveal == -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <!-- ==THE title of this website== -->
     <title>Sreekanth S | Personal Website</title>
@@ -64,7 +70,7 @@
 
             <div id="about-head">
 
-                <h1>About Me</h1>
+                <h1 class="main-heading">About Me</h1>
             </div>
 
             <div id="type-para">
@@ -88,14 +94,16 @@
         <!-- == The about section ends == -->
         
         <!-- == parallax effect== -->
-        <div id="parallax">
+        <div id="parallax1">
 
         </div>
 
         <!-- == The skills section begins == -->
         <div id="skills">
             
-            <div id="skill-head"><h1>My Skills</h1></div>
+            <div id="skill-head">
+                <h1 class="main-heading">My Skills</h1>
+            </div>
 
                 <div id="skill-body">
 
@@ -147,7 +155,7 @@
         
         <!-- == The education begins == -->
         <div id="education">
-            <h1 id="hd1">Education</h1>
+            <h1 id="hd1"  class="main-heading">Education</h1>
             
             <em>"Education Is Not The Learning Of Facts, But The Training Of The Mind To Think."</em>
             
@@ -189,7 +197,7 @@
         <!-- == The projects begins == -->
         <div id="portfolio">
             
-            <h1>Projects Made</h1>
+            <h1 class="main-heading">Projects Made</h1>
             
             <div id="PDSA-section">
                 <div id="PDSA-card">
@@ -218,9 +226,15 @@
         </div>
         <!-- == The projects ends == -->
 
+        
+        <!-- == parallax effect== -->
+        <div id="parallax2">
+
+        </div>
+
         <!-- == The contact section begins== -->
         <div id="contact-me">
-            <h1>Contact Me</h1>
+            <h1 class="main-heading">Contact Me</h1>
             <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMh36k7chfkqCZxHlecR4FqRNf2a8JL9FtOeLCf5EyjDzGAQ/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
             <div id="my-form">
                 <form id="contact-form">
@@ -239,7 +253,7 @@
         <footer>
             
             <div class="thanks">
-                <h2>Sreekanth's Personal Website</h2>
+                <h2 >Sreekanth's Personal Website</h2>
                 <p>Thank you for visiting my portfolio website. You can connect with me over social media.</p>
                 <p>Some parts of this website is still under construction and will be finished soon.</p>
             </div>
@@ -276,5 +290,7 @@
     <script src="scripts/typed.js"></script>
 
     <script src="scripts/main.js"></script>
+
+    <script src="scripts/scroll-effects.js"></script>
 </body>
 </html>

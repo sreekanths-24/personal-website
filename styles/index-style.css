@@ -11,22 +11,30 @@
     main{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 9vh auto auto 300px auto auto auto auto auto;
+        grid-template-rows: 9vh auto auto 300px auto auto auto 300px auto auto;
         grid-template-areas: 
             "nav"
             "img"
             "about"
             "parallax"
-            "skills"
             "education"
+            "skills"
             "portfolio"
+            "parallax2"
             "contact"
             "footer";
     }
     /*parallax*/
-    #parallax{
+    #parallax1{
         grid-area: parallax;
         background-image: url(../sources/images/me2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
+    #parallax2{
+        grid-area: parallax2;
+        background-image: url(../sources/images/awh2.jpg);
         background-size: cover;
         background-attachment: fixed;
         
@@ -115,7 +123,8 @@
         grid-template-areas: 
             "heading"
             "body";
-        background-image: linear-gradient(#d1ebff, white);
+        background-image: linear-gradient(white, #37caec);
+        
     }
 
     #skills h1{
@@ -147,7 +156,7 @@
     }
 
     #python3, #html5, #css3, #git-vcs, #github, #clang{
-        background-color: #37caec;
+        background-color: transparent;
 
     }
 
@@ -266,7 +275,7 @@
             "awh"
             "other"
             "PDSA";
-            background-image: linear-gradient(white, #37caec);
+            background-image: linear-gradient(#d1ebff, white);
         
     }
 
