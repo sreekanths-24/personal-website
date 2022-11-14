@@ -11,7 +11,7 @@
     main{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 9vh auto auto 300px auto auto auto 300px auto auto;
+        grid-template-rows: 9vh auto auto 300px auto auto auto auto auto;
         grid-template-areas: 
             "nav"
             "img"
@@ -20,7 +20,6 @@
             "education"
             "skills"
             "portfolio"
-            "parallax2"
             "contact"
             "footer";
     }
@@ -32,13 +31,13 @@
         background-attachment: fixed;
         
     }
-    #parallax2{
+    /* #parallax2{
         grid-area: parallax2;
         background-image: url(../sources/images/awh2.jpg);
         background-size: cover;
         background-attachment: fixed;
         
-    }
+    } */
 
     /*=================my image=======================*/
     #my-image{
@@ -555,7 +554,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+        padding: 20px;
         margin-bottom: 30px;
     } 
     #contact-me form{
@@ -580,6 +579,9 @@
         display: inline-block;
         padding: 5px 10px;
         font-size: 2rem;
+        border-radius: 10px;
+        border: 1px solid #003459;
+        margin: 0 6px 10px 6px;
     }
 
     #contact-me textarea{
@@ -594,8 +596,9 @@
         font-size: 1.5rem;
 
     }
-    #contact-me input{
-        margin: 10px;
+    #contact-me input[type=text],
+    #contact-me input[type=email]{
+        margin: 5px;
         width: 90%;
         font-size: 1.5rem;
         padding: 10px 20px;
