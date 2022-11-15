@@ -363,6 +363,7 @@
 
     /*other qualifications heading*/
     #education #hd2{
+        font-size: 1.5rem;
         grid-area: other;
         margin: 10px 20px;
     }
@@ -512,7 +513,7 @@
     }
 
     #portfolio #veiw-more-p p{
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: 50%;
         margin: 20px auto;
         min-height: 3vh;
@@ -573,15 +574,15 @@
 
     #contact-me input[type=button],
     #contact-me input[type=reset]{
-        background-color: #003459;
+        background-color: #125488;
         color: white;
         width: 40%;
         display: inline-block;
         padding: 5px 10px;
-        font-size: 2rem;
+        font-size: 1.5rem;
         border-radius: 10px;
         border: 1px solid #003459;
-        margin: 0 6px 10px 6px;
+        margin: 0 6px 6px 6px;
     }
 
     #contact-me textarea{
@@ -643,7 +644,7 @@
     }
 
     footer #social-links{
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding: 20px;
         padding-top: 0;
     }
@@ -674,6 +675,7 @@
     }
     footer #mes{
         font-size: 1rem;
+        text-align: center;
     }
     footer a{
         color: rgb(230, 220, 220);

@@ -55,6 +55,7 @@ var typed = new Typed('.typing', {
     cursorChar: "_"
   });
 
+
 //parallax effect
 // const parallax = document.getElementById("parallax")
 
