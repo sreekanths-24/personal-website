@@ -64,4 +64,3 @@ var typed = new Typed('.typing', {
 //     parallax.style.backgroundPositionY = offset * 0.9 + "px";
 // })
 
-navSlide();
