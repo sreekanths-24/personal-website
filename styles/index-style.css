@@ -145,16 +145,17 @@
         /* background-color: #37caec; */
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas: 
             "html css"
+            "js sqls"
             "python c"
             "git github";   
         padding: 10px; 
         margin: 20px 0;
     }
 
-    #python3, #html5, #css3, #git-vcs, #github, #clang{
+    .card-holder{
         background-color: transparent;
 
     }
@@ -186,6 +187,20 @@
         align-items: center;
         justify-content: center;
     }
+    /*javascript*/
+    #skills #javascript{
+        grid-area: js;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*sql*/
+    #skills #sql{
+        grid-area: sqls;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     /*c block*/    
     #skills #clang{
         grid-area: c;
@@ -212,27 +227,31 @@
     
     /*skill images*/
     #skills #html5-logo{
-        width: 85px;
-        height: auto;
-    }
-    
-    #skills #css3-logo{
-        width: 0px;
-        height: auto;
-    }
-
-    #skills #python3-logo{
         width: 60px;
         height: auto;
     }
 
     #skills #css3-logo{
+        width: 60px;
+        height: auto;
+    }
+    
+    
+    #skills #python3-logo{
+        width: 60px;
+        height: auto;
+    }
+    #skills #javascript-logo{
+        width: 60px;
+        height: auto;
+    }
+    #skills #sql-logo{
         width: 60px;
         height: auto;
     }
 
     #skills #clang-logo{
-        width: 60px;
+        width: 54px;
         height: auto;
     }
 
@@ -243,13 +262,13 @@
     }
 
     #skills #github-logo{
-        width: 60px;
+        width: 58px;
         height: auto;
         /* margin-bottom: 80px; */
 
     }
 
-    #html-card, #css-card, #python-card, #git-card, #github-card, #c-card{
+    .cards{
         width: 100%;
         height: auto;
         padding: 10px;
