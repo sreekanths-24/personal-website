@@ -3,7 +3,7 @@ ScrollReveal().reveal(".cards",{
     interval: 200,
     easing: 'ease-out',
     scale: 1.2,
-    reset: true    
+    reset: true ,
 });
 
 ScrollReveal().reveal(".ed-card",{
@@ -12,6 +12,6 @@ ScrollReveal().reveal(".ed-card",{
     easing: 'ease',
     origin:'bottom',
     distance:'80px',
-    reset: true    
+    reset: true    ,
 });
 
