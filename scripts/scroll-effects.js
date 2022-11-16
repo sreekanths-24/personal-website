@@ -4,6 +4,7 @@ ScrollReveal().reveal(".cards",{
     easing: 'ease-out',
     scale: 1.2,
     reset: true ,
+    duration: 1000
 });
 
 ScrollReveal().reveal(".ed-card",{
@@ -12,6 +13,7 @@ ScrollReveal().reveal(".ed-card",{
     easing: 'ease',
     origin:'bottom',
     distance:'80px',
-    reset: true    ,
+    reset: true,
+    duration: 1000
 });
 
