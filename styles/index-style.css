@@ -451,27 +451,23 @@
         padding: 20px;
     }
 
-    /* #portfolio #PDSA-section:hover{
+    #portfolio #PDSA-section:hover{
         padding: 10px;
         transition: 0.5s;
-    } */
+    }
 
     #portfolio #PDSA-card{
         border-radius: 10px;
         background-image: linear-gradient(#d1ebff ,white);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        transform-style: preserve-3d;
-        transform: perspective(2000px);
     }
 
     #portfolio #PDSA-card h2{
         margin: 10px 10px;
-        transform: translateZ(30px);
     }
 
     #portfolio #PDSA-card p{
         padding: 0 10px 10px 10px;
-        transform: translateZ(30px);
     }
 
     #portfolio #PDSA-card img{
@@ -494,28 +490,24 @@
         grid-area: p2;
         padding: 20px;
     }
-/* 
+
     #portfolio #gc-section:hover{
         padding: 10px;
         transition: 0.5s;
-    } */
+    }
 
     #portfolio #gc-card{
         border-radius: 10px;
         background-image: linear-gradient(#d1ebff ,white);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        transform-style: preserve-3d;
-        transform: perspective(2000px);
     }
 
     #portfolio #gc-card h2{
         margin: 10px 10px;
-        transform: translateZ(30px);
     }
 
     #portfolio #gc-card p{
         padding: 0 10px 10px 10px;
-        transform: translateZ(30px) ;
     }
 
     #portfolio #gc-card img{
@@ -531,7 +523,6 @@
         text-decoration: none;
         color: black;
         font-size: 1.5rem;
-        transform: translateZ(20px);
     }
 
     #portfolio #veiw-more-p{
