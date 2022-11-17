@@ -57,7 +57,7 @@ var typed = new Typed('.typing', {
 
 // vanilla tilt
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    max: 30,
+    max: 15,
     scale: 2
   });
 
