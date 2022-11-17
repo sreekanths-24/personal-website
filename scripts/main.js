@@ -55,6 +55,11 @@ var typed = new Typed('.typing', {
     cursorChar: "_"
   });
 
+// vanilla tilt
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
+    max: 30,
+    scale: 2
+  });
 
 //parallax effect
 // const parallax = document.getElementById("parallax")
