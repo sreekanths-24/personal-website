@@ -590,11 +590,21 @@
 
     }
 
+    #contact-me input[type=button]
+    {
+        background-color: #125488;
+        color: white;
+
+    }
+
+    #contact-me input[type=reset]{
+        background-color: #37caec;
+        color: black;
+    }
+
 
     #contact-me input[type=button],
     #contact-me input[type=reset]{
-        background-color: #125488;
-        color: white;
         width: 40%;
         display: inline-block;
         padding: 5px 10px;
@@ -696,6 +706,7 @@
     footer #mes{
         font-size: 1rem;
         text-align: center;
+        margin: 5px;
     }
     footer a{
         color: rgb(230, 220, 220);
