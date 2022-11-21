@@ -11,7 +11,7 @@
     main{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 9vh auto auto 300px auto auto auto auto auto;
+        grid-template-rows: 9vh auto auto 300px auto auto auto auto auto auto;
         grid-template-areas: 
             "nav"
             "img"
@@ -20,24 +20,10 @@
             "education"
             "skills"
             "portfolio"
+            "vision"
             "contact"
             "footer";
     }
-    /*parallax*/
-    #parallax1{
-        grid-area: parallax;
-        background-image: url(../sources/images/me2.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        
-    }
-    /* #parallax2{
-        grid-area: parallax2;
-        background-image: url(../sources/images/awh2.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        
-    } */
 
     /*=================my image=======================*/
     #my-image{
@@ -57,10 +43,11 @@
     /*==================about==========================*/
     #about{
         grid-area: about;
+        padding: 20px;
         background-image: linear-gradient(white, #d1ebff);
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 100px auto;
+        grid-template-rows: auto 70px auto;
         grid-template-areas: 
             "heading"
             "typing"
@@ -79,10 +66,13 @@
         grid-area: para;
     }
 
+    #about ul li{
+        list-style: none;
+    }
+
     #about .typingp{
         margin-top: 10px;
-        margin-left: 20px;
-        font-size: 1.8rem; 
+        font-size: 1.3rem; 
         font-weight: bold;   
         font-family:'Courier New', Courier, monospace;    
 
@@ -100,7 +90,6 @@
         font-size: 2.5rem;
         display: inline-block;
         margin-top: 10px;
-        margin-left: 20px;
         /* background-color: blue; */
     }
 
@@ -110,9 +99,160 @@
     }
 
     #about p{
-        margin: 20px 20px;
         font-size: 1rem;
     }
+    
+    /*================parallax=========================*/
+    #parallax1{
+        grid-area: parallax;
+        background-image: url(../sources/images/me2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
+    
+    /*=================education====================*/
+    #education{
+        grid-area: education;  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+            "heading"
+            "quote"
+            "bhavans"
+            "awh"
+            "other"
+            "PDSA";
+            background-image: linear-gradient(#d1ebff, white);
+        
+    }
+
+    #education #hd1{
+        grid-area: heading;
+        font-size: 2.5rem;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        /* background-color: aliceblue; */
+    }
+
+
+    #education em{
+        grid-area: quote;
+        display: block;
+        font-size: 1rem;
+        margin: 10px 20px;
+        text-align: center;
+    }
+
+    /*bhavans card*/
+    #education #bhavans-section{
+        grid-area: bhavans;
+        padding: 20px;
+    }
+
+    #education #bhavans-section:hover{
+        padding: 10px;
+        transition: 0.5s;
+    }
+
+    #education #bhavans-card{
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+    }
+
+    #education #bhavans-card h2{
+        margin: 10px 10px;
+    }
+
+    #education #bhavans-card p{
+        padding: 0 10px 10px 10px;
+    }
+
+    #education #bhavans-card img{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    /*awh card*/
+    #education #awh-section{
+        grid-area: awh;
+        padding: 20px;
+    }
+
+    #education #awh-card{
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+
+    }
+
+    #education #awh-card h2{
+        margin: 10px 10px;
+    }
+
+    #education #awh-card p{
+        padding: 0 10px 10px 10px;
+    }
+
+    #education #awh-card img{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    #education #awh-section:hover{
+        padding: 10px;
+        transition: 0.5s;
+    }
+
+    /*other qualifications heading*/
+    #education #hd2{
+        font-size: 1.5rem;
+        grid-area: other;
+        margin: 10px 20px;
+    }
+    
+    /*pdsa card*/
+    #education #PDSA-e-section{
+        grid-area: PDSA;
+        padding: 20px;
+    }
+
+    #education #PDSA-e-card{
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 20px;
+        background-color: white;
+
+    }
+
+    #education #PDSA-e-card h2{
+        margin: 10px 10px;
+    }
+
+
+    #education #PDSA-e-card p{
+        padding: 0 10px 10px 10px;
+    }
+
+    #education #PDSA-e-card img{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    #education #PDSA-e-section:hover{
+        padding: 10px;
+        transition: 0.5s;
+    }
+
     /*===================skills============================*/
     #skills{
         grid-area: skills;
@@ -280,147 +420,6 @@
 
     }
 
-    /*=================education====================*/
-    #education{
-        grid-area: education;  
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas: 
-            "heading"
-            "quote"
-            "bhavans"
-            "awh"
-            "other"
-            "PDSA";
-            background-image: linear-gradient(#d1ebff, white);
-        
-    }
-
-    #education #hd1{
-        grid-area: heading;
-        font-size: 2.5rem;
-        display: block;
-        margin-top: 20px;
-        margin-left: 20px;
-        /* background-color: aliceblue; */
-    }
-
-
-    #education em{
-        grid-area: quote;
-        display: block;
-        font-size: 1rem;
-        margin: 10px 20px;
-        text-align: center;
-    }
-
-    /*bhavans card*/
-    #education #bhavans-section{
-        grid-area: bhavans;
-        padding: 20px;
-    }
-
-    #education #bhavans-section:hover{
-        padding: 10px;
-        transition: 0.5s;
-    }
-
-    #education #bhavans-card{
-        border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        background-color: white;
-    }
-
-    #education #bhavans-card h2{
-        margin: 10px 10px;
-    }
-
-    #education #bhavans-card p{
-        padding: 0 10px 10px 10px;
-    }
-
-    #education #bhavans-card img{
-        width: 100%;
-        height: auto;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-
-    /*awh card*/
-    #education #awh-section{
-        grid-area: awh;
-        padding: 20px;
-    }
-
-    #education #awh-card{
-        border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        background-color: white;
-
-    }
-
-    #education #awh-card h2{
-        margin: 10px 10px;
-    }
-
-    #education #awh-card p{
-        padding: 0 10px 10px 10px;
-    }
-
-    #education #awh-card img{
-        width: 100%;
-        height: auto;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    
-    #education #awh-section:hover{
-        padding: 10px;
-        transition: 0.5s;
-    }
-
-    /*other qualifications heading*/
-    #education #hd2{
-        font-size: 1.5rem;
-        grid-area: other;
-        margin: 10px 20px;
-    }
-    
-    /*pdsa card*/
-    #education #PDSA-e-section{
-        grid-area: PDSA;
-        padding: 20px;
-    }
-
-    #education #PDSA-e-card{
-        border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom: 20px;
-        background-color: white;
-
-    }
-
-    #education #PDSA-e-card h2{
-        margin: 10px 10px;
-    }
-
-
-    #education #PDSA-e-card p{
-        padding: 0 10px 10px 10px;
-    }
-
-    #education #PDSA-e-card img{
-        width: 100%;
-        height: auto;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    
-    #education #PDSA-e-section:hover{
-        padding: 10px;
-        transition: 0.5s;
-    }
 
      /*=================portfolio======================*/
      #portfolio{
@@ -545,6 +544,29 @@
     #portfolio #veiw-more-p p a{
         color: white;
     }
+
+    /*=================== vision section ===================*/
+    #vision{
+        grid-area: vision;
+        background-image: linear-gradient(#d1ebff, white,#d1ebff);
+    }
+
+    #vision h1{
+        font-size: 2.5rem;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        
+    }
+
+    #vision .vision-card{
+        padding: 20px;
+    }
+    
+    #vision p{
+        margin: 10px 0;
+    }
+
 
      /*=================contact me ====================*/
 
