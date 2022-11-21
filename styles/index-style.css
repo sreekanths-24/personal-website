@@ -25,28 +25,6 @@
             "footer";
     }
 
-    /*=================== vision section ===================*/
-    #vision{
-        grid-area: vision;
-        background-image: linear-gradient(#d1ebff, white,#d1ebff);
-    }
-
-    #vision h1{
-        font-size: 2.5rem;
-        display: block;
-        margin-top: 20px;
-        margin-left: 20px;
-        
-    }
-
-    #vision .vision-card{
-        padding: 20px;
-    }
-    
-    #vision p{
-        margin: 10px 0;
-    }
-
     /*=================my image=======================*/
     #my-image{
         grid-area: img;
@@ -566,6 +544,29 @@
     #portfolio #veiw-more-p p a{
         color: white;
     }
+
+    /*=================== vision section ===================*/
+    #vision{
+        grid-area: vision;
+        background-image: linear-gradient(#d1ebff, white,#d1ebff);
+    }
+
+    #vision h1{
+        font-size: 2.5rem;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        
+    }
+
+    #vision .vision-card{
+        padding: 20px;
+    }
+    
+    #vision p{
+        margin: 10px 0;
+    }
+
 
      /*=================contact me ====================*/
 
