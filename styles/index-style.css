@@ -47,7 +47,7 @@
         background-image: linear-gradient(white, #d1ebff);
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 70px auto;
+        grid-template-rows: auto 7.5rem auto;
         grid-template-areas: 
             "heading"
             "typing"
@@ -72,7 +72,7 @@
 
     #about .typingp{
         margin-top: 10px;
-        font-size: 1.3rem; 
+        font-size: 1.7rem; 
         font-weight: bold;   
         font-family:'Courier New', Courier, monospace;    
 
