@@ -612,7 +612,7 @@
 
     }
 
-    #contact-me input[type=button]
+    /* #contact-me input[type=button]
     {
         background-color: #125488;
         color: white;
@@ -622,7 +622,7 @@
     #contact-me input[type=reset]{
         background-color: #37caec;
         color: black;
-    }
+    } */
 
 
     #contact-me input[type=button],
@@ -634,6 +634,9 @@
         border-radius: 10px;
         border: 1px solid #003459;
         margin: 0 6px 6px 6px;
+        background-color: #125488;
+        color: white;
+
     }
 
     #contact-me textarea{
