@@ -3,7 +3,8 @@ ScrollReveal().reveal(".cards",{
     easing: 'ease-out',
     scale: 1.2,
     reset: true ,
-    duration: 600
+    duration: 600,
+    desktop: false
 });
 
 ScrollReveal().reveal(".ed-card",{
@@ -12,6 +13,7 @@ ScrollReveal().reveal(".ed-card",{
     origin:'bottom',
     distance:'80px',
     reset: true,
-    duration: 600
+    duration: 600,
+    desktop: false
 });
 
