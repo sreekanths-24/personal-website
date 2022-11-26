@@ -1,30 +1,3 @@
-//navbar toggle
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-    
-
-    burger.addEventListener('click', () =>  {
-        //toggle nav
-        nav.classList.toggle('nav-active');
-
-        //animate links
-        navLinks.forEach((link, index) =>{
-            if(link.style.animation ){
-                link.style.animation = ''
-            } else{
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index/7 + 0.5}s`; 
-
-            }
-        });
-
-        //burger animation
-        burger.classList.toggle('toggle');
-    });
-
-}
-
 //smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -55,5 +28,23 @@ var typed = new Typed('.typing', {
     cursorChar: "_"
   });
 
+//scroll reveal
+ ScrollReveal().reveal(".cards",{
+    interval: 200,
+    easing: 'ease-out',
+    scale: 1.2,
+    reset: true ,
+    duration: 600,
+    desktop: false
+});
 
-navSlide();
+ScrollReveal().reveal(".ed-card",{
+    interval: 200,
+    easing: 'ease',
+    origin:'bottom',
+    distance:'80px',
+    reset: true,
+    duration: 600,
+    desktop: false
+});
+

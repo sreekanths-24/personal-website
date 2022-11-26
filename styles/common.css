@@ -12,6 +12,10 @@ a{
     color: #007eae;
 }
 
+h1{
+    text-align: center;
+}
+
 p{
     font-family: 'Poppins', sans-serif;
 }

@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles/all.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index-style.css">
-    <link rel="stylesheet" href="styles/navigation.css">
+    <!-- <link rel="stylesheet" href="styles/navigation.css"> -->
 
     <!-- == Scroll reveal == -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -40,26 +40,24 @@
         </div>
         
         <!-- == The navbar begins == -->
-        <nav>
-            
+        <nav>       
             <div class="logo">
-                <h4><i class="fa-brands fa-react"></i> SREEKANTH S</h4>
+                <h4><i class="fa-solid fa-fire"></i> SREEKANTH S</h4>
             </div>
-            <ul class="nav-links">
-                <li><a href="#nav-gap">ABOUT ME</a></li>
-                <li><a href="#education">EDUCATION</a></li>
-                <li><a href="#skills">MY SKILLS</a></li>
-                <li><a href="#portfolio">PROJECTS</a></li>
-                <li><a href="#vision">MY VISION</a></li>
-                <!-- <li><a href="#blogs">BLOGS</a></li> -->
-                <li><a href="#contact-me">CONTACT ME</a></li>
+        
+            <ul id="nav-link-id">
+                <li><a href="#nav-gap"><i class="fa-solid fa-user"></i> ABOUT ME</a></li>
+                <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> EDUCATION</a></li>
+                <li><a href="#skills"><i class="fa-solid fa-laptop-code"></i> MY SKILLS</a></li>
+                <li><a href="#portfolio"><i class="fa-solid fa-code-compare"></i> PROJECTS</a></li>
+                <li><a href="#vision"><i class="fa-solid fa-eye"></i> MY VISION</a></li>
+                <li><a href="#contact-me"><i class="fa-solid fa-phone"></i> CONTACT ME</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            
+            <i id="togglenav" class="fa-solid fa-bars"></i>
         </nav>
+
+        
         <!-- == The navbar ends == -->
         
         
@@ -308,7 +306,7 @@
             <div class="quick-links">
                 <h2>Quick Links</h2>
                 <ul class="quick-nav-links">
-                    <li><a href="#about"><i class="fa-solid fa-link"></i> ABOUT</a></li>
+                    <li><a href="#nav-gap"><i class="fa-solid fa-link"></i> ABOUT</a></li>
                     <li><a href="#education"><i class="fa-solid fa-link"></i> EDUCATION</a></li>
                     <li><a href="#skills"><i class="fa-solid fa-link"></i> SKILLS</a></li>
                     <li><a href="#portfolio"><i class="fa-solid fa-link"></i> PROJECTS</a></li>
@@ -335,12 +333,28 @@
         <!-- == The footer section ends== -->
 
     </main>
+
     <!-- == All the majour js == -->
     <script src="scripts/typed.js"></script>
 
     <script src="scripts/main.js"></script>
-
+    
     <script src="scripts/scroll-effects.js"></script>
+        
+    <script>
+        const icon = document.getElementById('togglenav');
+        const menu = document.getElementById('nav-link-id');
+
+        icon.onclick = function(){
+            menu.classList.toggle('nav-active');
+        }
+
+        document.onclick = function(clickEvent){
+            if(clickEvent.target.id !== 'nav-link-id' && clickEvent.target.id !== 'togglenav'){
+                menu.classList.remove('nav-active');    
+            }
+        }
+    </script>
     
 </body>
 </html>
