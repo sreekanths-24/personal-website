@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles/all.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index-style.css">
-    <link rel="stylesheet" href="styles/navigation.css">
+    <!-- <link rel="stylesheet" href="styles/navigation.css"> -->
 
     <!-- == Scroll reveal == -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -45,7 +45,8 @@
             <div class="logo">
                 <h4><i class="fa-brands fa-react"></i> SREEKANTH S</h4>
             </div>
-            <ul class="nav-links">
+        
+            <ul id="nav-link-id">
                 <li><a href="#nav-gap">ABOUT ME</a></li>
                 <li><a href="#education">EDUCATION</a></li>
                 <li><a href="#skills">MY SKILLS</a></li>
@@ -54,11 +55,8 @@
                 <!-- <li><a href="#blogs">BLOGS</a></li> -->
                 <li><a href="#contact-me">CONTACT ME</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+        
+            <i id="togglenav" class="fa-solid fa-bars"></i>
         </nav>
         <!-- == The navbar ends == -->
         
@@ -339,8 +337,25 @@
     <script src="scripts/typed.js"></script>
 
     <script src="scripts/main.js"></script>
-
+    
     <script src="scripts/scroll-effects.js"></script>
+    
+    <!-- <script src="scripts/nav.js"></script> -->
+    
+    <script>
+        const icon = document.getElementById('togglenav');
+        const menu = document.getElementById('nav-link-id');
+
+        icon.onclick = function(){
+            menu.classList.toggle('nav-active');
+        }
+
+        document.onclick = function(clickEvent){
+            if(clickEvent.target.id !== 'nav-link-id' && clickEvent.target.id !== 'togglenav'){
+                menu.classList.remove('nav-active');    
+            }
+        }
+    </script>
     
 </body>
 </html>
