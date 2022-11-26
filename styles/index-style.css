@@ -1009,7 +1009,8 @@
 
 }
 #contact-me input[type=text],
-#contact-me input[type=email]{
+#contact-me input[type=email],
+#contact-me input[type=number]{
     margin: 5px;
     width: 90%;
     font-size: 1.5rem;
@@ -1019,7 +1020,7 @@
     border: 1px solid black;
 }
 
-#contact-me input[type=text]:hover,#contact-me input[type=email]:hover,#contact-me textarea:hover{
+#contact-me input[type=text]:hover,#contact-me input[type=email]:hover,#contact-me input[type=number]:hover,#contact-me textarea:hover{
     margin: 5px;
     width: 95%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

@@ -30,6 +30,16 @@
     <!-- == Scroll reveal == -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
+    <!-- == Email js == -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("GyJhHdUX15okOW9Eb");
+    })();
+    </script>
+
     <!-- ==THE title of this website== -->
     <title>Sreekanth S | Personal Website</title>
 </head>
@@ -283,11 +293,18 @@
             <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMh36k7chfkqCZxHlecR4FqRNf2a8JL9FtOeLCf5EyjDzGAQ/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
             <div id="my-form">
                 <form id="contact-form" class="ed-card">
+                    
                     <input type="text" name="Name" id="user-name" placeholder="Name" required class="cards">
+                    
                     <input type="email" name="Email" id="user-email" placeholder="Email" required class="cards">
+                    
+                    <input type="number" name="Mobilenumber" id="user-num" placeholder="Phone number" required class="cards">
+                    
                     <textarea name="message" id="user-message" placeholder="Your Reply" required class="cards"></textarea>
+                    
                     <input type="reset" value="Reset" class="cards">
-                    <input type="button" value="Submit" onclick="alert('Your message could not be send due to some technical error, which will be fixed soon, in the mean time you can send me a reply through email. My Gmail Id is sreekanthsanthosh17@gmail.com')" class="cards">
+                    
+                    <input type="button" value="Submit" onclick="sendMail()" class="cards">
 
                 </form>
             </div>
@@ -339,7 +356,7 @@
 
     <script src="scripts/main.js"></script>
     
-    <script src="scripts/scroll-effects.js"></script>
+    <script src="scripts/sendmail.js"></script>
         
     <script>
         const icon = document.getElementById('togglenav');
