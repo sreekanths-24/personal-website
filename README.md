@@ -14,7 +14,7 @@
 ScrollRevealjs, Typedjs and Font Awsome
 
 <h2> Website :- 
-<a href="https://sreekanths-24.github.io/portfolio" target="_blank">Check It Out</a>
+<a href="https://sreekanths-24.github.io/personal-website/index.html" target="_blank">Check It Out</a>
 </h2> 
 <br>
 
