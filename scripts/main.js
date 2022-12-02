@@ -29,7 +29,7 @@ var typed = new Typed('.typing', {
   });
 
 //scroll reveal
- ScrollReveal().reveal(".cards",{
+ScrollReveal().reveal(".cards",{
     interval: 200,
     easing: 'ease-out',
     scale: 1.2,
