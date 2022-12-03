@@ -233,7 +233,7 @@
     padding-right: 20px;
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 768px){
     #about{
 
         grid-template-rows: auto auto auto auto auto auto;
@@ -472,7 +472,7 @@
        
     }
     #education #awh-card img{
-        height: 15.8em;
+        height: auto;
     
     }
 
@@ -776,6 +776,8 @@
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     padding: 20px;
+    text-align: center;
+
 }
 
 #portfolio #PDSA-section:hover{
@@ -784,6 +786,9 @@
 }
 
 #portfolio #PDSA-card{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
     border-radius: 10px;
     background-image: linear-gradient(#d1ebff ,white);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -818,6 +823,8 @@
     grid-column: 1 / -1;
     grid-row: 3 / 4;
     padding: 20px;
+    text-align: center;
+
 }
 
 #portfolio #gc-section:hover{
@@ -826,6 +833,9 @@
 }
 
 #portfolio #gc-card{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
     border-radius: 10px;
     background-image: linear-gradient(#d1ebff ,white);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -860,6 +870,7 @@
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     padding: 20px;
+    text-align: center;
 }
 
 #portfolio #pw-section:hover{
@@ -868,6 +879,9 @@
 }
 
 #portfolio #pw-card{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
     border-radius: 10px;
     background-image: linear-gradient(#d1ebff ,white);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -922,7 +936,7 @@
     color: white;
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 992px){
     #portfolio{
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, auto);
