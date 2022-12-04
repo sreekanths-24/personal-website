@@ -337,8 +337,8 @@
 #education #bhavans-section{
     grid-column: 1 / -1;
     grid-row: 3 / 4;
-   
     padding: 20px;
+    text-align: center;
 }
 
 #education #bhavans-section:hover{
@@ -350,6 +350,9 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
+    margin: 0 auto;
+    max-width: 500px;   
+    text-align: left;
 }
 
 #education #bhavans-card h2{
@@ -372,14 +375,16 @@
     padding: 20px;
     grid-column: 1 / -1;
     grid-row: 4 / 5;
-   
+    text-align: center;
 }
 
 #education #awh-card{
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
-   
+    margin: 0 auto;
+    max-width: 500px;   
+    text-align: left;
 }
 
 #education #awh-card h2{
@@ -415,6 +420,7 @@
     grid-column: 1 / -1;
     grid-row: 6 / 7;
     padding: 20px;
+    text-align: center;
 }
 
 #education #PDSA-e-card{
@@ -422,7 +428,9 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 20px;
     background-color: white;
-
+    margin: 0 auto;
+    max-width: 500px;   
+    text-align: left;
 }
 
 #education #PDSA-e-card h2{
@@ -446,7 +454,7 @@
     transition: 0.5s;
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 992px){
     #education{
         min-height: 100vh;
 
@@ -640,7 +648,8 @@
 }
 
 .card{
-    width: 100%;
+    width: 15em;
+    max-width: 400px;
     height: auto;
     padding: 10px;
     margin: 10px;
