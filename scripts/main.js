@@ -48,3 +48,14 @@ ScrollReveal().reveal(".ed-card",{
     desktop: false
 });
 
+//on load
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("load-section").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
