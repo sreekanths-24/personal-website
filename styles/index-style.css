@@ -837,6 +837,21 @@
     margin-left: 20px;
 }
 
+#portfolio .p-links{
+    padding: 10px;
+    display: block;
+    text-align: center;
+    width: 90%;
+    min-height: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    text-decoration: none;
+    color: black;
+    border: 1px solid currentColor;
+    font-size: 1.5rem;
+}
+
+
 /*PDSA card*/
 #portfolio #PDSA-section{
     grid-column: 1 / -1;
@@ -854,6 +869,7 @@
 #portfolio #PDSA-card{
     max-width: 500px;
     margin: 0 auto;
+    padding-bottom: 5px;
     text-align: left;
     border-radius: 10px;
     background-image: linear-gradient(#d1ebff ,white);
@@ -876,14 +892,6 @@
     border-top-right-radius: 10px;
 }
 
-#portfolio #PDSA-card .p-links{
-    padding: 10px;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-}
-
 /*Google clone card*/
 #portfolio #gc-section{
     grid-column: 1 / -1;
@@ -901,6 +909,7 @@
 #portfolio #gc-card{
     max-width: 500px;
     margin: 0 auto;
+    padding-bottom: 5px;
     text-align: left;
     border-radius: 10px;
     background-image: linear-gradient(#d1ebff ,white);
@@ -923,14 +932,6 @@
     border-top-right-radius: 10px;
 }
 
-#portfolio #gc-card .p-links{
-    padding: 10px;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-}
-
 /*personal website card*/
 #portfolio #pw-section{
     grid-column: 1 / -1;
@@ -947,6 +948,7 @@
 #portfolio #pw-card{
     max-width: 500px;
     margin: 0 auto;
+    padding-bottom: 5px;
     text-align: left;
     border-radius: 10px;
     background-image: linear-gradient(#d1ebff ,white);
@@ -968,15 +970,6 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
-#portfolio #pw-card .p-links{
-    padding: 10px;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-}
-
 
 /*===== veiw more button =========*/
 #portfolio #veiw-more-p{
