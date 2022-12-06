@@ -33,7 +33,7 @@ body{
 }
 
 ::-webkit-scrollbar-track{
-    background: #ffffff;
+    background-color: transparent;
 }
 /*
 Extra small devices (phones, 600px and down) 
