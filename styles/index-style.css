@@ -394,10 +394,6 @@
     text-align: center;
 }
 
-#education #bhavans-section:hover{
-    padding: 10px;
-    transition: 0.5s;
-}
 
 #education #bhavans-card{
     border-radius: 10px;
@@ -455,10 +451,6 @@
     border-top-right-radius: 10px;
 }
 
-#education #awh-section:hover{
-    padding: 10px;
-    transition: 0.5s;
-}
 
 /*other qualifications heading*/
 #education #hd2{
@@ -502,10 +494,6 @@
     border-top-right-radius: 10px;
 }
 
-#education #PDSA-e-section:hover{
-    padding: 10px;
-    transition: 0.5s;
-}
 
 @media screen and (min-width: 1100px){
     #education{
@@ -863,11 +851,6 @@
 
 }
 
-#portfolio #PDSA-section:hover{
-    padding: 10px;
-    transition: 0.5s;
-}
-
 #portfolio #PDSA-card{
     max-width: 500px;
     margin: 0 auto;
@@ -904,10 +887,6 @@
 
 }
 
-#portfolio #gc-section:hover{
-    padding: 10px;
-    transition: 0.5s;
-}
 
 #portfolio #gc-card{
     max-width: 500px;
@@ -944,10 +923,6 @@
     text-align: center;
 }
 
-#portfolio #pw-section:hover{
-    padding: 10px;
-    transition: 0.5s;
-}
 
 #portfolio #pw-card{
     max-width: 500px;
