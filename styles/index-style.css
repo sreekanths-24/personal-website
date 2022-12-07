@@ -358,7 +358,7 @@ main{
 
 /*================parallax=========================*/
 #parallax1{
-    background-image: url(../sources/images/me2.jpg);
+    background-image: url(../sources/images/me2.png);
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
@@ -398,73 +398,48 @@ main{
     text-align: center;
 }
 
-/*bhavans card*/
+#education #bhavans-section, #education #awh-section, #education #PDSA-e-section{
+    padding: 20px;
+    text-align: center;
+}
+
+#education #bhavans-card, #education #awh-card, #education #PDSA-e-card{
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+    background-color: white;
+}
+
+#education #bhavans-card h2,#education #awh-card h2,#education #PDSA-e-card h2{
+    margin: 10px 10px;
+}
+
+#education #bhavans-card p,#education #awh-card p,#education #PDSA-e-card p{
+    padding: 0 10px 10px 10px;
+}
+
+#education #bhavans-card img,#education #awh-card img,#education #PDSA-e-card img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* =========== bhavans card ================== */
 #education #bhavans-section{
     grid-column: 1 / -1;
     grid-row: 3 / 4;
-    padding: 20px;
-    text-align: center;
 }
 
-
-#education #bhavans-card{
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: white;
-    margin: 0 auto;
-    max-width: 500px;   
-    text-align: left;
-}
-
-#education #bhavans-card h2{
-    margin: 10px 10px;
-}
-
-#education #bhavans-card p{
-    padding: 0 10px 10px 10px;
-}
-
-#education #bhavans-card img{
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-/*awh card*/
+/* ====================== awh card =========================*/
 #education #awh-section{
-    padding: 20px;
     grid-column: 1 / -1;
     grid-row: 4 / 5;
-    text-align: center;
 }
 
-#education #awh-card{
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: white;
-    margin: 0 auto;
-    max-width: 500px;   
-    text-align: left;
-}
-
-#education #awh-card h2{
-    margin: 10px 10px;
-}
-
-#education #awh-card p{
-    padding: 0 10px 10px 10px;
-}
-
-#education #awh-card img{
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-
-/*other qualifications heading*/
+/* ================= other qualifications heading ================= */
 #education #hd2{
     font-size: 1.5rem;
     grid-column: 1 / -1;
@@ -472,38 +447,10 @@ main{
     margin: 10px 20px;
 }
 
-/*pdsa card*/
+/* ================== pdsa card ================ */
 #education #PDSA-e-section{
     grid-column: 1 / -1;
     grid-row: 6 / 7;
-    padding: 20px;
-    text-align: center;
-}
-
-#education #PDSA-e-card{
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 20px;
-    background-color: white;
-    margin: 0 auto;
-    max-width: 500px;   
-    text-align: left;
-}
-
-#education #PDSA-e-card h2{
-    margin: 10px 10px;
-}
-
-
-#education #PDSA-e-card p{
-    padding: 0 10px 10px 10px;
-}
-
-#education #PDSA-e-card img{
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 
@@ -583,23 +530,23 @@ main{
 
 }
 
+#skills #html5, #skills #css3, #skills #python3, #skills #javascript,#skills #sql,#skills #clang,#skills #git-vcs,#skills #github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /*html block*/
 #skills #html5{
     grid-column: 1 / 4;
     grid-row: 1 / 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-top-left-radius: 20px;
 }
 /*css block*/
 #skills #css3{
     grid-column: 4 / -1;
     grid-row: 1 / 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-top-right-radius: 20px;
 
 }
@@ -607,53 +554,34 @@ main{
 
 /*python block*/
 #skills #python3{
-
     grid-column: 1 / 4;
     grid-row: 3 / 4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 /*javascript*/
 #skills #javascript{
     grid-column: 1 / 4;
     grid-row: 2 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 /*sql*/
 #skills #sql{
     grid-column: 4 / -1;
     grid-row: 2 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 /*c block*/    
 #skills #clang{
     grid-column: 4 / -1;
     grid-row: 3 / 4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 /*git block*/    
 #skills #git-vcs{
     grid-column: 1 / 4;
     grid-row: 4 / 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-bottom-left-radius: 20px;
 }
 /*github block*/    
 #skills #github{
     grid-column: 4 / -1;
     grid-row: 4 / 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-bottom-right-radius: 20px;
 }
 
@@ -851,112 +779,54 @@ main{
     font-size: 1.5rem;
 }
 
+#portfolio #PDSA-section,#portfolio #gc-section,#portfolio #pw-section{
+    padding: 20px;
+    text-align: center;
+}
 
-/*PDSA card*/
+#portfolio #PDSA-card,#portfolio #gc-card,#portfolio #pw-card{
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    text-align: left;
+    border-radius: 20px;
+    background-image: linear-gradient(#f3f3f3, white, white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#portfolio #PDSA-card h2,#portfolio #gc-card h2,#portfolio #pw-card h2{
+    margin: 10px 10px;
+}
+
+#portfolio #PDSA-card p,#portfolio #gc-card p,#portfolio #pw-card p{
+    padding: 0 10px 10px 10px;
+    min-height: 60px;
+}
+
+#portfolio #PDSA-card img,#portfolio #gc-card img,#portfolio #pw-card img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* ======= PDSA card ======== */
 #portfolio #PDSA-section{
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    padding: 20px;
-    text-align: center;
-
 }
 
-#portfolio #PDSA-card{
-    max-width: 500px;
-    margin: 0 auto;
-    padding-bottom: 5px;
-    text-align: left;
-    border-radius: 20px;
-    background-image: linear-gradient(#f3f3f3, white, white);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
-#portfolio #PDSA-card h2{
-    margin: 10px 10px;
-}
-
-#portfolio #PDSA-card p{
-    padding: 0 10px 10px 10px;
-    min-height: 60px;
-}
-
-#portfolio #PDSA-card img{
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-/*Google clone card*/
+/* ==== Google clone card ======= */
 #portfolio #gc-section{
     grid-column: 1 / -1;
     grid-row: 3 / 4;
-    padding: 20px;
-    text-align: center;
-
 }
 
-
-#portfolio #gc-card{
-    max-width: 500px;
-    margin: 0 auto;
-    padding-bottom: 5px;
-    text-align: left;
-    border-radius: 20px;
-    background-image: linear-gradient(#f3f3f3, white, white);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#portfolio #gc-card h2{
-    margin: 10px 10px;
-}
-
-#portfolio #gc-card p{
-    padding: 0 10px 10px 10px;
-    min-height: 60px;
-}
-
-#portfolio #gc-card img{
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-/*personal website card*/
+/* ====== personal website card ========*/
 #portfolio #pw-section{
     grid-column: 1 / -1;
     grid-row: 4 / 5;
-    padding: 20px;
-    text-align: center;
-}
-
-
-#portfolio #pw-card{
-    max-width: 500px;
-    margin: 0 auto;
-    padding-bottom: 5px;
-    text-align: left;
-    border-radius: 20px;
-    background-image: linear-gradient(#f3f3f3, white, white);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#portfolio #pw-card h2{
-    margin: 10px 10px;
-}
-
-#portfolio #pw-card p{
-    padding: 0 10px 10px 10px;
-    min-height: 50px;
-}
-
-#portfolio #pw-card img{
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: 1px solid white;
 }
 
 /*===== veiw more button =========*/
@@ -1014,35 +884,7 @@ main{
     }
 }
 
-/*=================== vision section ===================*/
-/* #vision{
-    background-color: #d1ebff;    
-}
-
-#vision h1{
-    font-size: 2.5rem;
-    display: block;
-    margin-left: 20px;
-}
-
-#vision .vision-card{
-    padding: 20px;
-}
-
-#vision p{
-    margin: 10px 0;
-}
-
-@media screen and (min-width: 900px){
-    #vision{
-        padding: 0 5em;
-        min-height: 100vh;
-
-    }
-} */
-
-
-    /*=================contact me ====================*/
+/*=================contact me ====================*/
 
 #contact-me{
     background-image: linear-gradient(#d1ebff, white);
@@ -1159,17 +1001,16 @@ footer .quick-links{
 footer .contact-info{
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+    width: 100%;
 }
 
 footer #social-links{
     font-size: 2.5rem;
-    padding: 20px;
-    padding-top: 0;
-    text-align: center;
-}
-
-footer #social-links i{
-    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    width: 100%;
 }
 
 footer ul{    

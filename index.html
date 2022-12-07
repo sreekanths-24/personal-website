@@ -4,12 +4,12 @@
     <!-- == Some usual meta tags == -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="keywords" content="made by Sreekanth S, programmer, coder, job hunt, web developer">
     <meta name="description" content="This is the official Personal website of Sreekanth S. Thanks for visiting.">
 
     <!-- ==favicon== -->
-    <link rel="icon" type="image/x-icon" href="sources/favicon/favicon.jpg">
+    <link rel="icon" type="image/jpg" href="sources/favicon/favicon.jpg">
     
     <!-- == OSWALD font from google font for headings == -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="styles/all.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index-style.css">
+    <!-- <link rel="stylesheet" href="styles/reset.css"> -->
 
     <!-- == Scroll reveal == -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -38,6 +39,16 @@
         emailjs.init("GyJhHdUX15okOW9Eb");
     })();
     </script>
+
+    <!-- Helps prevent duplicate content issues -->
+    <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-read.html">
+
+    <!-- To run the web application in full-screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+    <!-- Has no effect unless you have the previous meta tag -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <!-- ==THE title of this website== -->
     <title>Sreekanth S | Personal Website</title>
@@ -87,7 +98,7 @@
             </div>
 
             <div id="type-para">
-                <p class="typingp">Hey there!! I <span class="typing"></sp></p>
+                <p class="typingp">Hey there!! I <span class="typing"></span></p>
 
             </div>
 
@@ -128,7 +139,7 @@
             
             <div id="bhavans-section">
                 <div id="bhavans-card" class="ed-card">
-                    <a href="https://bhavansschoolchevayur.org/#book5/undefined" target="_blank">
+                    <a href="https://bhavansschoolchevayur.org/#book5/undefined" target="_blank" rel="noopener noreferrer">
                         <img src="sources/images/bhavans.jpeg" alt="picture of bhavans school">
 
                     </a>
@@ -139,7 +150,7 @@
             
             <div id="awh-section">
                 <div id="awh-card" class="ed-card">
-                    <a href="https://awhengg.org/" target="_blank">
+                    <a href="https://awhengg.org/" target="_blank" rel="noopener noreferrer">
 
                         <img src="sources/images/awh.jpeg" alt="picture of AWH Engineering College">
                     </a>
@@ -173,7 +184,6 @@
                     <div id="html5" class="card-holder">
                         <div id="html-card" class="cards card">
                             <img src="sources/skills-images/html5.png" alt="html5 logo" id="html5-logo">
-                            <!-- <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="html logo" id="html5-logo"> -->
                             <h2>HTML 5</h2>
                         </div>
                     </div>
@@ -181,7 +191,6 @@
                     <div id="css3" class="card-holder">
                         <div id="css-card" class="cards card">
                             <img src="sources/skills-images/css3.png" alt="css3 logo" id="css3-logo">
-                            <!-- <img src="https://img.icons8.com/color/48/000000/css3.png" alt="css3 logo" id="css3-logo"> -->
                             <h2>CSS 3</h2>
                         </div>
                     </div>
@@ -202,7 +211,6 @@
                     
                     <div id="python3" class="card-holder">
                         <div id="python-card" class="cards card">
-                            <!-- <img src="https://img.icons8.com/color/48/000000/python--v1.png" alt="python3 logo" id="python3-logo"> -->
                             <img src="sources/skills-images/python3.png" alt="python3 logo" id="python3-logo">
                             <h2>PYTHON 3</h2>
                         </div>
@@ -241,32 +249,32 @@
             <h1 class="main-heading">Projects Made</h1>
             
             <div id="PDSA-section">
-                <div id="PDSA-card" class="ed-card">
+                <div id="PDSA-card" class="ed-card edu-card">
                     <img src="sources/projects-images/PDSA-site.png" alt="picture of PDSA website">
                     <h2>PDSA Textbook</h2>
                     <p>Website to help my friends complete the NPTEL course PDSA using Python.</p>
-                    <a href="https://github.com/sreekanths-24/PDSA-Textbook" class="p-links" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
-                    <a href="https://sreekanths-24.github.io/PDSA-Textbook/index.html" class="p-links" target="_blank"><i class="fa-solid fa-link"></i> View Website</a>
+                    <a href="https://github.com/sreekanths-24/PDSA-Textbook" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Code</a>
+                    <a href="https://sreekanths-24.github.io/PDSA-Textbook/index.html" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> View Website</a>
                 </div>
             </div>
 
             <div id="gc-section">
-                <div id="gc-card" class="ed-card">
+                <div id="gc-card" class="ed-card edu-card">
                     <img src="sources/projects-images/google-clone.png" alt="picture of google clone">
                     <h2>Google Clone</h2>
                     <p>A clone of google's search engine (just the design). best if you open it on laptop or pc.</p>
-                    <a href="https://github.com/sreekanths-24/google-clone" class="p-links" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
-                    <a href="https://sreekanths-24.github.io/google-clone/index.html" class="p-links" target="_blank"><i class="fa-solid fa-link"></i> View Website</a>
+                    <a href="https://github.com/sreekanths-24/google-clone" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Code</a>
+                    <a href="https://sreekanths-24.github.io/google-clone/index.html" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> View Website</a>
                 </div>
             </div>
 
             <div id="pw-section">
-                <div id="pw-card" class="ed-card">
+                <div id="pw-card" class="ed-card edu-card">
                     <img src="sources/projects-images/pw3.png" alt="picture of my personal website">
                     <h2>My Personal website</h2>
                     <p>Its the website you are looking at right now.</p>
-                    <a href="https://github.com/sreekanths-24/personal-website" class="p-links" target="_blank"><i class="fa-brands fa-github"></i> View Code</a>
-                    <a href="#about" class="p-links" target="_blank"><i class="fa-solid fa-link"></i> View Website</a>
+                    <a href="https://github.com/sreekanths-24/personal-website" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Code</a>
+                    <a href="#about" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> View Website</a>
                 </div>
             </div>
 
@@ -342,11 +350,11 @@
             <div class="contact-info">
                 <h2>Contact Links</h2>
                 <div id="social-links">
-                    <a href="mailto:sreekanthsanthosh17@gmail.com" target="_blank" class="cards"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://www.twitter.com/_Sreekanth_S_/" target="_blank" class="cards"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/sreekanth-s-663418232" target="_blank" class="cards"><i class="fa-brands fa-linkedin"></i></a> 
-                    <a href="https://github.com/sreekanths-24" target="_blank" class="cards"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.youtube.com/@_Sreekanth_S_" target="_blank" class="cards"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="mailto:sreekanthsanthosh17@gmail.com" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.twitter.com/_Sreekanth_S_/" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/sreekanth-s-663418232" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-brands fa-linkedin"></i></a> 
+                    <a href="https://github.com/sreekanths-24" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.youtube.com/@_Sreekanth_S_" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
             <hr>
