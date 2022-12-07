@@ -358,7 +358,7 @@ main{
 
 /*================parallax=========================*/
 #parallax1{
-    background-image: url(../sources/images/me2.png);
+    background-image: url(../sources/images/me2.jpg);
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
