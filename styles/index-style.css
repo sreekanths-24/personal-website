@@ -217,10 +217,14 @@ main{
     align-items: center;
 }
 
-#about img{
+#about #me-phone{
     width: 100%;
     height: auto;
 
+}
+
+#about #me-laptop{
+    display: none;
 }
 
 #about #about-head{
@@ -290,14 +294,6 @@ main{
     padding-right: 20px;
 }
 
-@media screen and (min-width: 992px){
-    #about{
-
-        min-height: 100vh;
-        
-    }
-
-}
 
 
 @media screen and (min-width: 580px){
@@ -309,11 +305,14 @@ main{
     #about #my-image{
         grid-column: 4 / -1;
         grid-row: 1 / -1;
-        padding: 10px;
+        background-image: url(../sources/images/me2.jpg);
+        background-size: cover;
+        background-position-y: -120px;
+        background-repeat: no-repeat;
     }    
 
-    #about img{
-        border-radius: 20px;
+    #about #me-phone{
+        display: none;
     }
 
     #about #about-head{
@@ -336,26 +335,34 @@ main{
         display: flex;
         align-items: center;
     }
-
+    
     #about .typingp{
         font-family: 'Poppins', sans-serif;     
     }
-
+    
     #about .typingp span{
         font-family: 'Poppins', sans-serif;
-    
+        
     }
-
+    
     #about h1{
         text-align: left;
     }
-
+    
     #about .content-d{
         display: none;
     }
     
 }
 
+@media screen and (min-width: 992px){
+    #about{
+
+        min-height: 100vh;
+        
+    }
+
+}
 /*================parallax=========================*/
 #parallax1{
     background-image: url(../sources/images/me2.jpg);
