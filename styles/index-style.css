@@ -541,7 +541,7 @@ main{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto auto;
-    background-image: linear-gradient(white, #37caec);
+    background-image: linear-gradient(white,#d1ebff , #37caec);
     
 }
 
