@@ -1094,11 +1094,14 @@ main{
     transition: 0.5s;
 }
 @media screen and (min-width: 900px){
-    #contact-me{
-        min-height: 100vh;
-    }
     #contact-me h1{
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #contact-me{
+        min-height: 100vh;
     }
 }
 
