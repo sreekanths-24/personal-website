@@ -33,18 +33,6 @@
     animation: spin 1s linear infinite;
 }
 
-@media screen and (min-width: 900px) {
-    .loader{
-        width: 120px;
-        height: 120px;
-        border: 16px solid #f3f3f3;
-        border-top: 16px solid #003459;
-        border-right: 16px solid #007eae;
-        border-bottom: 16px solid #1ca7ec;
-        border-left: 16px solid #d1ebff;
-        
-    }
-}
 
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
