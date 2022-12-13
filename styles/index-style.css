@@ -382,7 +382,7 @@ main{
 }
 /*================parallax=========================*/
 #parallax1{
-    background-image: url(../sources/images/me2.jpg);
+    background-image: url(../sources/images/me4.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
     background-size: cover;
