@@ -383,10 +383,16 @@ main{
 /*================parallax=========================*/
 #parallax1{
     background-image: url(../sources/images/me4.jpg);
-    background-attachment: fixed;
     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
     height: 300px;
+    position: relative;
 }
 @media screen and (min-width: 500px){
     #parallax1{
