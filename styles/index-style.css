@@ -34,10 +34,6 @@
     animation: spin 1s linear infinite;
 }
 
-#load-message{
-    margin: 30px;
-    text-align: center;
-}
 
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
