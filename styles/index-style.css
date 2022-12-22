@@ -569,7 +569,7 @@ main{
     grid-row: 2 / -1;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     padding: 10px; 
     margin: 20px 0;
 }
@@ -579,7 +579,7 @@ main{
 
 }
 
-#skills #html5, #skills #css3, #skills #python3, #skills #javascript,#skills #sql,#skills #clang,#skills #git-vcs,#skills #github{
+#skills #html5, #skills #css3, #skills #vscode, #skills #netlify, #skills #python3, #skills #javascript,#skills #sql,#skills #clang,#skills #git-vcs,#skills #github{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -618,15 +618,27 @@ main{
     grid-column: 4 / -1;
     grid-row: 3 / 4;
 }
+
+/*vscode block*/
+#skills #vscode{
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+}
+
+/*netlify*/
+#skills #netlify{
+    grid-column: 4 / -1;
+    grid-row: 4 / 5;
+}
 /*git block*/    
 #skills #git-vcs{
     grid-column: 1 / 4;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
 }
 /*github block*/    
 #skills #github{
     grid-column: 4 / -1;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
 }
 
 /*skill images*/
@@ -655,6 +667,15 @@ main{
 
 #skills #clang-logo{
     width: 54px;
+    height: auto;
+}
+
+#skills #vscode-logo{
+    width: 60px;
+    height: auto;
+}
+#skills #netlify-logo{
+    width: 60px;
     height: auto;
 }
 
@@ -697,7 +718,7 @@ main{
 
     #skill-body{
         grid-template-columns: repeat(4 , 1fr);
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
     }
 
     #skills #skill-head{
@@ -748,6 +769,16 @@ main{
         grid-column: 4 / 5;
         grid-row: 2 / 3;
     }
+    /*vscode block*/    
+    #skills #vscode{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    /*netlify block*/    
+    #skills #netlify{
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
 
     /*skill images*/
     #skills #html5-logo{
@@ -786,6 +817,18 @@ main{
     }
 
     #skills #github-logo{
+        width: 6em;
+        height: auto;
+        /* margin-bottom: 80px; */
+
+    }
+    #skills #vscode-logo{
+        width: 6em;
+        height: auto;
+        /* margin-bottom: 80px; */
+
+    }
+    #skills #netlify-logo{
         width: 6em;
         height: auto;
         /* margin-bottom: 80px; */
