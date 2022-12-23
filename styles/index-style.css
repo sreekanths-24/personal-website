@@ -156,7 +156,7 @@ main{
 
     nav ul{
         width: 100%;
-        height: 80%;
+        height: 85%;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -182,7 +182,7 @@ main{
     nav .logo{
         font-size: 1.5rem;
         width: 100%;
-        height: 20%;
+        height: 15%;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -212,7 +212,7 @@ main{
     background-image: linear-gradient(white, #d1ebff);
     display: grid;
     grid-template-columns: repeat(6, 1fr) ;
-    grid-template-rows: auto auto 7.5rem auto;
+    grid-template-rows: auto auto 7.5rem auto auto;
     
 }
 #about #my-image{
@@ -273,6 +273,19 @@ main{
     font-family:'Courier New', Courier, monospace;    
 }
 
+#about #note{
+    background-image: linear-gradient(#4adede ,#1ca7ec);
+    background-attachment: fixed;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#about #note span{
+    font-size: 1.2rem;
+}
+
+
 #about h1{
     text-align: left;
     font-size: 2.5rem;
@@ -301,7 +314,7 @@ main{
 
 @media screen and (min-width: 580px){
     #about{
-        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto  auto auto auto auto;
     }
 
     #about #my-image{
@@ -329,13 +342,17 @@ main{
     
     #about #about-para{
         grid-column: 1 / 4;
-        grid-row: 4 / -1;
+        grid-row: 4 / 5;
     }
     #about #type-para{
         min-height: 100px;
         max-height: 400px;
         display: flex;
         align-items: center;
+    }
+    #about #note{
+        grid-column: 1 / 4;
+        grid-row: 5 / -1;
     }
     
     #about .typingp{
@@ -1080,6 +1097,7 @@ main{
     max-width: 500px;
     min-height: 50px;
     background-image: linear-gradient(#4adede ,#1ca7ec);
+    background-attachment: fixed;
     padding: 10px 0;
     border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
