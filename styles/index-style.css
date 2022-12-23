@@ -674,11 +674,11 @@ main{
     height: auto;
 }
 #skills #javascript-logo{
-    width: 60px;
+    width: 55px;
     height: auto;
 }
 #skills #sql-logo{
-    width: 60px;
+    width: 55px;
     height: auto;
 }
 
@@ -814,11 +814,11 @@ main{
         height: auto;
     }
     #skills #javascript-logo{
-        width: 6em;
+        width: 5.5em;
         height: auto;
     }
     #skills #sql-logo{
-        width: 6em;
+        width: 5.5em;
         height: auto;
     }
 
