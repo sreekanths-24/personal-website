@@ -1316,8 +1316,6 @@ main{
 
 /*=================footer======================*/
 footer{
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
     background-color: #00171f;
     color: rgb(230, 220, 220);
     display: grid;
