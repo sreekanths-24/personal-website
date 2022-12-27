@@ -59,6 +59,7 @@ main{
     background-color: #d1ebff;
 }
 
+
 @media screen and (min-width: 900px) {
     main{
         position: absolute;
@@ -98,11 +99,7 @@ main{
         display: none;
     }
     
-    nav .logo{
-        font-size: 1.5rem;
-    }
-    
-    nav i{
+    nav .logo,nav i{
         font-size: 1.5rem;
     }
     
@@ -138,6 +135,15 @@ main{
     }
 }
 
+@media screen and (max-width: 330px) {
+    nav .logo,nav i{
+        font-size: 1.2rem;
+    }
+    
+    .nav-active{
+        font-size: 1.2rem;
+    }
+}
 @media screen and (min-width: 900px) {
     nav {
         position: fixed;
@@ -312,6 +318,24 @@ main{
     padding-right: 20px;
 }
 
+@media screen and (max-width: 330px) {
+    #about{
+        grid-template-rows: auto auto 6rem auto auto;
+    }
+
+    #about h1{
+        font-size: 2rem;
+    }
+
+    #about h2,#about .typingp{
+        font-size: 1.2rem;
+    }
+
+    #about p,#about #note span,#about ul li a{
+        font-size: 0.8rem;
+    }
+}
+
 @media screen and (min-width: 580px){
     #about{
         grid-template-rows: auto auto auto  auto auto auto auto;
@@ -418,6 +442,12 @@ main{
     }
 }
 
+@media screen and (max-width: 330px){
+    #parallax1{
+        height: 200px;
+    }
+}
+
 /*=================education====================*/
 #education{
     display: grid;
@@ -501,7 +531,24 @@ main{
     grid-column: 1 / -1;
     grid-row: 6 / 7;
 }
+@media screen and (max-width: 330px) {
+    #education #hd1{
+        font-size: 2rem;
+    }
 
+    #education em{
+        font-size: 0.8rem;
+    }
+
+    #education #hd2,#education #bhavans-card h2,#education #awh-card h2,#education #PDSA-e-card h2{
+        font-size: 1.3rem;
+    }
+
+    #education #bhavans-card p,#education #awh-card p,#education #PDSA-e-card p{
+        font-size: 0.8rem;
+    }
+    
+}
 
 @media screen and (min-width: 1100px){
     #education{
@@ -720,6 +767,53 @@ main{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+@media screen and (max-width:330px){
+    #skills h1{
+        font-size: 2rem;
+    }
+    
+    /*skill images*/
+    #skills #html5-logo{
+        width: 55px;
+    }
+
+    #skills #css3-logo{
+        width: 38px;
+    }
+
+    #skills #python3-logo{
+        width: 52px;
+    }
+    #skills #javascript-logo{
+        width: 50px;
+    }
+    #skills #sql-logo{
+        width: 50px;
+    }
+
+    #skills #clang-logo{
+        width: 49px;
+    }
+
+    #skills #vscode-logo{
+        width: 55px;
+    }
+    #skills #netlify-logo{
+        width: 55px;
+    }
+
+    #skills #git-logo{
+        width: 55px;
+    }
+
+    #skills #github-logo{
+        width: 53px;
+    }
+
+    .card h2{
+        font-size: 1.3rem;
+    }
 }
 @media screen and (min-width: 992px){
     .card{
@@ -999,6 +1093,26 @@ main{
 #portfolio #veiw-more-p p a{
     color: white;
 }
+
+@media screen and (max-width: 330px) {
+    #portfolio h1{
+        font-size: 2rem;
+    }
+
+    #portfolio .p-links,#portfolio #veiw-more-p p{
+        font-size: 1.1rem;
+    }
+
+    #portfolio #PDSA-card p,#portfolio #gc-card p,#portfolio #pw-card p{
+        font-size: 0.8rem;
+    }    
+    
+    #portfolio #PDSA-card h2,#portfolio #gc-card h2,#portfolio #pw-card h2{
+        font-size: 1.3rem;
+    }
+
+}
+
 @media screen and (min-width: 1100px){
     #portfolio{
         background-image: linear-gradient(white, white, #d1ebff);
@@ -1144,15 +1258,20 @@ main{
     border: 1px solid black;
 }
 
-#contact-me input[type=text]:hover,
-#contact-me input[type=email]:hover,
-#contact-me input[type=number]:hover,
-#contact-me textarea:hover{
-    margin: 0 5px;
-    width: 95%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.5s;
+@media screen and (max-width:330px){
+    #contact-me h1{
+        font-size: 2rem;
+    }
+    #contact-me input[type=button],
+    #contact-me input[type=reset],
+    #contact-me input[type=text],
+    #contact-me input[type=email],
+    #contact-me input[type=number],
+    #contact-me textarea{
+        font-size: 1.2rem;
+    }
 }
+
 @media screen and (min-width: 900px){
     #contact-me h1{
         text-align: center;
@@ -1194,6 +1313,8 @@ main{
 
 /*=================footer======================*/
 footer{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     background-color: #00171f;
     color: rgb(230, 220, 220);
     display: grid;
@@ -1229,7 +1350,6 @@ footer #social-links{
 footer ul{    
     margin: 20px;
     font-size: 1rem;
-
 }
 footer ul li{
     list-style: none;
@@ -1265,6 +1385,25 @@ footer a{
 footer .quick-nav-links a{
     color: rgb(230, 220, 220);
     font-size: 1.5rem;
+}
+
+@media screen and (max-width:330px){
+    footer #social-links{
+        font-size: 2rem;
+    }
+        
+    footer h2{
+        font-size: 2rem;
+    }
+
+    footer ul li a{
+        font-size: 1.2rem;
+    }
+    
+    footer #mes, footer p{
+        font-size: 0.8rem;
+    }
+
 }
 
 @media screen and (min-width: 900px){
