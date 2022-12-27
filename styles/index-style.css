@@ -141,7 +141,10 @@ main{
     }
     
     .nav-active{
+        height: 70vh;
         font-size: 1.2rem;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
     }
 }
 @media screen and (min-width: 900px) {
