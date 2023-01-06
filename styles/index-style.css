@@ -4,7 +4,24 @@
         display: none;
     }
 } 
+/*=========== common view all button ================*/
+.next-page-button-section{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 50%;
+    max-width: 200px;
+    margin: 20px auto;
+    min-height: 3vh;
+    background-color: #125488;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.5rem 1rem;
+}
 
+.next-page-button-section a{
+    color: white;
+
+}
 /*======loading page=====*/
 #load-section{
     position: fixed;
@@ -19,15 +36,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(135deg, white, #d1ebff);
 }
 .loader {
     border: 8px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 8px solid #003459;
-    border-right: 8px solid #007eae;
-    border-bottom: 8px solid #1ca7ec;
-    border-left: 8px solid #d1ebff;
+    border-top: 8px solid #1ca7ec;
+    border-right: 8px solid #8f0000;
+    border-bottom: 8px solid #dc9d00;
+    border-left: 8px solid #008a00;
     width: 60px;
     height: 60px;
     -webkit-animation: spin 1s linear infinite;
@@ -455,7 +471,7 @@ main{
 #education{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(7, auto);
+    grid-template-rows: repeat(8, auto);
     background-image: linear-gradient(#d1ebff, #37caec);
     
 }
@@ -533,6 +549,11 @@ main{
 #education #PDSA-e-section{
     grid-column: 1 / -1;
     grid-row: 6 / 7;
+}
+
+#education #edu-more{
+    grid-column: 1 / -1;
+    grid-row: 7 / 8;
 }
 @media screen and (max-width: 330px) {
     #education #hd1{
@@ -615,7 +636,7 @@ main{
 #skills{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     background-image: linear-gradient(#37caec,#d1ebff);
     
 }
@@ -633,7 +654,7 @@ main{
 
 #skill-body{
     grid-column: 1 / -1;
-    grid-row: 2 / -1;
+    grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto auto auto auto auto;
@@ -770,6 +791,11 @@ main{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+
+#skill-more{
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
 }
 @media screen and (max-width:330px){
     #skills h1{
@@ -1074,14 +1100,14 @@ main{
 }
 
 /*===== veiw more button =========*/
-#portfolio #veiw-more-p{
+#portfolio .veiw-more-p{
     grid-column: 1 / -1;
     grid-row: 5 / 6;
     text-align: center;
     margin-bottom: 20px;
 }
 
-#portfolio #veiw-more-p p{
+#portfolio .veiw-more-p p{
     font-size: 1.5rem;
     width: 50%;
     max-width: 200px;
@@ -1093,7 +1119,7 @@ main{
     padding: 0.5rem 1rem;
 }
 
-#portfolio #veiw-more-p p a{
+#portfolio .veiw-more-p p a{
     color: white;
 }
 
@@ -1102,7 +1128,7 @@ main{
         font-size: 2rem;
     }
 
-    #portfolio .p-links,#portfolio #veiw-more-p p{
+    #portfolio .p-links,#portfolio .veiw-more-p p{
         font-size: 1.1rem;
     }
 
@@ -1160,7 +1186,7 @@ main{
         font-size: 3rem;
     }
 
-    #portfolio #veiw-more-p p{
+    #portfolio .veiw-more-p p{
         font-size: 2rem;
     }
 

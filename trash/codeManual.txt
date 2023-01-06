@@ -1172,3 +1172,22 @@ navbar toggle
 
  }
 
+
+        // scroll position
+        const links = document.querySelectorAll('a');
+
+        for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', saveScrollPosition);
+        }
+
+        function saveScrollPosition() {
+        window.scrollPos = window.scrollY;
+        }
+
+        window.scrollTo(0, window.scrollPos);
+
+        // Use JavaScript to set the background-attachment property dynamically 
+        var parallaxElement = document.getElementById("parallax1");
+        var bgAttachment = window.getComputedStyle(element, null).getPropertyValue("background-attachment");
+        parallaxElement.style.backgroundAttachment = (bgAttachment === "fixed") ? "scroll" : "fixed";
+    
