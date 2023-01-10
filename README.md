@@ -14,7 +14,7 @@
 ScrollRevealjs, Typedjs and Font Awsome
 
 <h2> Website :- 
-<a href="sreekanthsanthosh.netlify.app" target="_blank">Check It Out</a>
+<a href="https://sreekanthsanthosh.netlify.app/" target="_blank">Check It Out</a>
 </h2> 
 <br>
 
