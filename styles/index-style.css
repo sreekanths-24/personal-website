@@ -1234,7 +1234,7 @@ main{
     margin-bottom: 30px;
 } 
 #contact-me form{
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     width: 100%;
     max-width: 500px;
@@ -1253,7 +1253,7 @@ main{
     display: inline-block;
     padding: 5px 10px;
     font-size: 1.5rem;
-    border-radius: 10px;
+    border-radius: 7px;
     border: 1px solid #003459;
     margin: 0 6px 6px 6px;
     background-color: #125488;
@@ -1266,7 +1266,7 @@ main{
     min-height: 12rem;
     padding: 10px 20px;
     outline: none;
-    border-radius: 10px;
+    border-radius: 7px;
     border: 1px solid black;
     margin: 10px;
     resize: none;
@@ -1283,7 +1283,7 @@ main{
     font-size: 1.5rem;
     padding: 10px 20px;
     outline: none;
-    border-radius: 10px;
+    border-radius: 7px;
     border: 1px solid black;
 }
 
