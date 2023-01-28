@@ -730,7 +730,7 @@ main{
 }
 
 /*skill images*/
-#skills #html5-logo{
+/* #skills #html5-logo{
     width: 60px;
     height: auto;
 }
@@ -770,15 +770,13 @@ main{
 #skills #git-logo{
     width: 60px;
     height: auto;
-    /* margin-bottom: 80px; */
 }
 
 #skills #github-logo{
     width: 58px;
     height: auto;
-    /* margin-bottom: 80px; */
 
-}
+} */
 
 .card{
     width: 15em;
@@ -803,7 +801,7 @@ main{
     }
     
     /*skill images*/
-    #skills #html5-logo{
+    /* #skills #html5-logo{
         width: 55px;
     }
 
@@ -838,7 +836,7 @@ main{
 
     #skills #github-logo{
         width: 53px;
-    }
+    } */
 
     .card h2{
         font-size: 1.3rem;
@@ -921,7 +919,7 @@ main{
     }
 
     /*skill images*/
-    #skills #html5-logo{
+    /* #skills #html5-logo{
         width: 6em;
         height: auto;
     }
@@ -953,34 +951,30 @@ main{
     #skills #git-logo{
         width: 6em;
         height: auto;
-        /* margin-bottom: 80px; */
     }
 
     #skills #github-logo{
         width: 6em;
         height: auto;
-        /* margin-bottom: 80px; */
 
     }
     #skills #vscode-logo{
         width: 6em;
         height: auto;
-        /* margin-bottom: 80px; */
 
     }
     #skills #netlify-logo{
         width: 6em;
         height: auto;
-        /* margin-bottom: 80px; */
 
-    }
+    } */
 }
 @media screen and (min-width: 1400px){
     #skills h1{
         font-size: 3rem;
     }
     /*skill images*/
-    #skills #html5-logo{
+    /* #skills #html5-logo{
         width: 7em;
     }
 
@@ -1010,7 +1004,7 @@ main{
 
     #skills #github-logo{
         width: 7em;
-    }
+    } */
 
     #skills #skill-body .skill-block h2{
         font-size: 2rem;
