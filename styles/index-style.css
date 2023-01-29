@@ -10,12 +10,12 @@
     font-size: 1.5rem;
     width: 50%;
     max-width: 200px;
-    margin: 20px auto;
+    margin: 20px auto 0;
     min-height: 3vh;
     background-color: #125488;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 0.5rem 1rem;
+    padding: 0.4em;
 }
 
 .next-page-button-section a{
@@ -469,27 +469,19 @@ main{
 
 /*=================education====================*/
 #education{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, auto);
     background-image: linear-gradient(#d1ebff, #37caec);
-    
+    padding-bottom: 1em;
 }
 
 #education #hd1{
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
     font-size: 2.5rem;
     display: block;
-    margin-top: 20px;
+    padding-top: 20px;
     margin-left: 20px;
-    /* background-color: aliceblue; */
 }
 
 
 #education em{
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
     display: block;
     font-size: 1rem;
     margin: 10px 20px;
@@ -525,36 +517,6 @@ main{
     border-top-right-radius: 10px;
 }
 
-/* =========== bhavans card ================== */
-#education #bhavans-section{
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-}
-
-/* ====================== awh card =========================*/
-#education #awh-section{
-    grid-column: 1 / -1;
-    grid-row: 4 / 5;
-}
-
-/* ================= other qualifications heading ================= */
-#education #hd2{
-    font-size: 1.5rem;
-    grid-column: 1 / -1;
-    grid-row: 5 / 6;
-    margin: 10px 20px;
-}
-
-/* ================== pdsa card ================ */
-#education #PDSA-e-section{
-    grid-column: 1 / -1;
-    grid-row: 6 / 7;
-}
-
-#education #edu-more{
-    grid-column: 1 / -1;
-    grid-row: 7 / 8;
-}
 @media screen and (max-width: 330px) {
     #education #hd1{
         font-size: 2rem;
@@ -580,8 +542,6 @@ main{
 
     }
     #education #bhavans-section{
-        grid-column: 1 / 4;
-        grid-row: 3 / 4;
         padding: 20px;
     }
 
@@ -594,8 +554,6 @@ main{
     
     #education #awh-section{
         padding: 20px;
-        grid-column: 4 / -1;
-        grid-row: 3 / 4;
        
     }
     #education #awh-card img{
@@ -604,8 +562,6 @@ main{
     }
 
     #education #PDSA-e-section{
-        grid-column: 1 / 4;
-        grid-row: 6 / 7;
         padding: 20px;
     }
 
@@ -636,9 +592,14 @@ main{
 #skills{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     background-image: linear-gradient(#37caec,#d1ebff);
     
+}
+
+#skill-head{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
 }
 
 #skills h1{
@@ -648,13 +609,9 @@ main{
     margin-left: 20px;
 }
 
-#skill-head{
-    grid-column: 1 / -1;
-}
-
 #skill-body{
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    grid-row: 2 / -1;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto auto auto auto auto;
@@ -667,7 +624,7 @@ main{
 
 }
 
-#skills #html5, #skills #css3, #skills #vscode, #skills #netlify, #skills #python3, #skills #javascript,#skills #sql,#skills #clang,#skills #git-vcs,#skills #github{
+#skills .skill-block{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -685,12 +642,6 @@ main{
     grid-row: 1 / 2;
 }
 
-
-/*python block*/
-#skills #python3{
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-}
 /*javascript*/
 #skills #javascript{
     grid-column: 1 / 4;
@@ -700,6 +651,12 @@ main{
 #skills #sql{
     grid-column: 4 / -1;
     grid-row: 2 / 3;
+}
+
+/*python block*/
+#skills #python3{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
 }
 /*c block*/    
 #skills #clang{
@@ -730,54 +687,9 @@ main{
 }
 
 /*skill images*/
-#skills #html5-logo{
+#skills #skill-body img{
     width: 60px;
     height: auto;
-}
-
-#skills #css3-logo{
-    width: 43px;
-    height: auto;
-}
-
-#skills #python3-logo{
-    width: 57px;
-    height: auto;
-}
-#skills #javascript-logo{
-    width: 55px;
-    height: auto;
-}
-#skills #sql-logo{
-    width: 55px;
-    height: auto;
-}
-
-#skills #clang-logo{
-    width: 54px;
-    height: auto;
-}
-
-#skills #vscode-logo{
-    width: 60px;
-    height: auto;
-}
-#skills #netlify-logo{
-    width: 60px;
-    height: auto;
-}
-
-#skills #git-logo{
-    width: 60px;
-    height: auto;
-    /* margin-bottom: 80px; */
-}
-
-#skills #github-logo{
-    width: 58px;
-    height: auto;
-    /* margin-bottom: 80px; */
-
 }
 
 .card{
@@ -793,51 +705,14 @@ main{
 
 }
 
-#skill-more{
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-}
 @media screen and (max-width:330px){
     #skills h1{
         font-size: 2rem;
     }
     
     /*skill images*/
-    #skills #html5-logo{
-        width: 55px;
-    }
-
-    #skills #css3-logo{
-        width: 38px;
-    }
-
-    #skills #python3-logo{
-        width: 52px;
-    }
-    #skills #javascript-logo{
+    #skills #skill-body img{
         width: 50px;
-    }
-    #skills #sql-logo{
-        width: 50px;
-    }
-
-    #skills #clang-logo{
-        width: 49px;
-    }
-
-    #skills #vscode-logo{
-        width: 55px;
-    }
-    #skills #netlify-logo{
-        width: 55px;
-    }
-
-    #skills #git-logo{
-        width: 55px;
-    }
-
-    #skills #github-logo{
-        width: 53px;
     }
 
     .card h2{
@@ -921,95 +796,14 @@ main{
     }
 
     /*skill images*/
-    #skills #html5-logo{
+    #skills #skill-body img{
         width: 6em;
-        height: auto;
     }
 
-    #skills #css3-logo{
-        width: 4.2em;
-        height: auto;
-    }
-
-
-    #skills #python3-logo{
-        width: 5.3em;
-        height: auto;
-    }
-    #skills #javascript-logo{
-        width: 5.5em;
-        height: auto;
-    }
-    #skills #sql-logo{
-        width: 5.5em;
-        height: auto;
-    }
-
-    #skills #clang-logo{
-        width: 5.4em;
-        height: auto;
-    }
-
-    #skills #git-logo{
-        width: 6em;
-        height: auto;
-        /* margin-bottom: 80px; */
-    }
-
-    #skills #github-logo{
-        width: 6em;
-        height: auto;
-        /* margin-bottom: 80px; */
-
-    }
-    #skills #vscode-logo{
-        width: 6em;
-        height: auto;
-        /* margin-bottom: 80px; */
-
-    }
-    #skills #netlify-logo{
-        width: 6em;
-        height: auto;
-        /* margin-bottom: 80px; */
-
-    }
 }
 @media screen and (min-width: 1400px){
     #skills h1{
         font-size: 3rem;
-    }
-    /*skill images*/
-    #skills #html5-logo{
-        width: 7em;
-    }
-
-    #skills #css3-logo{
-        width: 5em;
-    }
-
-    #skills #python3-logo{
-        width: 6.3em;
-    }
-
-    #skills #javascript-logo{
-        width: 7em;
-    }
-
-    #skills #sql-logo{
-        width: 7em;
-    }
-
-    #skills #clang-logo{
-        width: 6.4em;
-    }
-
-    #skills #git-logo{
-        width: 7em;
-    }
-
-    #skills #github-logo{
-        width: 7em;
     }
 
     #skills #skill-body .skill-block h2{
