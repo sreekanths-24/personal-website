@@ -48,7 +48,7 @@
     border-radius: 50%;
     border-top: 8px solid #d1ebff;
     border-right: 8px solid #007eae;
-    border-bottom: 8px solid #003459;
+    border-bottom: 8px solid #125488;
     border-left: 8px solid #00171f;
     width: 60px;
     height: 60px;
@@ -134,8 +134,6 @@ main{
         bottom: -50vh;
         transform: translateY(100%);
         min-height: fit-content;
-
-        /* transition: transform 0.5 ease-in; */
     }
     .nav-active{
         background-color: #003459;
