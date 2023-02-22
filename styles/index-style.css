@@ -60,18 +60,19 @@
     height: 60px;
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
-} */
+} 
 
 
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
 }
-  
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+*/
 
 main{
     display: none;
@@ -853,12 +854,12 @@ main{
     font-size: 1.5rem;
 }
 
-#portfolio #PDSA-section,#portfolio #gc-section,#portfolio #pw-section{
+#portfolio .project-card{
     padding: 20px;
     text-align: center;
 }
 
-#portfolio #PDSA-card,#portfolio #gc-card,#portfolio #pw-card{
+#portfolio .pro-cards{
     max-width: 500px;
     margin: 0 auto;
     padding-bottom: 5px;
@@ -868,16 +869,15 @@ main{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#portfolio #PDSA-card h2,#portfolio #gc-card h2,#portfolio #pw-card h2{
-    margin: 10px 10px;
+#portfolio .pro-cards div h2{
+    padding: 10px 10px;
 }
 
-#portfolio #PDSA-card p,#portfolio #gc-card p,#portfolio #pw-card p{
+#portfolio .pro-cards div p{
     padding: 0 10px 10px 10px;
-    min-height: 60px;
 }
 
-#portfolio #PDSA-card img,#portfolio #gc-card img,#portfolio #pw-card img{
+#portfolio .pro-cards img{
     width: 100%;
     height: auto;
     border-top-left-radius: 10px;
@@ -940,11 +940,11 @@ main{
         font-size: 1.1rem;
     }
 
-    #portfolio #PDSA-card p,#portfolio #gc-card p,#portfolio #pw-card p{
+    #portfolio .pro-cards div p{
         font-size: 0.8rem;
     }    
     
-    #portfolio #PDSA-card h2,#portfolio #gc-card h2,#portfolio #pw-card h2{
+    #portfolio .pro-cards div h2{
         font-size: 1.3rem;
     }
 
@@ -958,12 +958,12 @@ main{
         min-height: 100vh;
     }
 
-    #portfolio #PDSA-card,#portfolio #gc-card,#portfolio #pw-card{
+    #portfolio .pro-cards{
         min-height: 480px;   
     }
 
-    #portfolio #PDSA-card p,#portfolio #gc-card p,#portfolio #pw-card p{
-        min-height: 100px;
+    #portfolio .pro-cards div{
+        min-height: 170px;
     }
 
     #portfolio h1{
@@ -998,15 +998,12 @@ main{
         font-size: 2rem;
     }
 
-    #portfolio #PDSA-card h2,#portfolio #gc-card h2,#portfolio #pw-card h2{
+    #portfolio .pro-cards div h2{
         font-size: 2rem;
     }
 
-    #portfolio #PDSA-card p,#portfolio #gc-card p,#portfolio #pw-card p{
+    #portfolio .pro-cards div p{
         min-height: 140px;
-    }
-
-    #portfolio #PDSA-card p,#portfolio #gc-card p,#portfolio #pw-card p{
         font-size: 1.5rem;
     }
 }
