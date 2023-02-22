@@ -46,8 +46,8 @@
 }
 
 #load-section img{
-    width: 20em;
-    height: 20vh;
+    width: 15em;
+    height: auto;
 }
 /* .loader {
     border: 8px solid #f3f3f3;
