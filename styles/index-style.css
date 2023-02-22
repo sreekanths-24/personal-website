@@ -41,9 +41,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(135deg, white, #d1ebff);
+    background-color: #fffdfd;
+    /* background-image: linear-gradient(135deg, white, #d1ebff); */
 }
-.loader {
+
+#load-section img{
+    width: 20em;
+    height: 20vh;
+}
+/* .loader {
     border: 8px solid #f3f3f3;
     border-radius: 50%;
     border-top: 8px solid #d1ebff;
@@ -54,7 +60,7 @@
     height: 60px;
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
-}
+} */
 
 
 @-webkit-keyframes spin {
