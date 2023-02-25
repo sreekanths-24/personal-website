@@ -499,33 +499,35 @@ main{
     text-align: center;
 }
 
-#education #bhavans-section, #education #awh-section, #education #PDSA-e-section{
-    padding: 20px;
-    text-align: center;
+#education .edu-sec{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin: 2em 0;  
 }
 
-#education #bhavans-card, #education #awh-card, #education #PDSA-e-card{
-    border-radius: 10px;
-    margin: 0 auto;
-    max-width: 500px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: left;
+#education .edu-block{
+    width: 90%;
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#education .edu-block img{
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
-#education #bhavans-card h2,#education #awh-card h2,#education #PDSA-e-card h2{
+#education .edu-block h2{
     margin: 10px 10px;
 }
 
-#education #bhavans-card p,#education #awh-card p,#education #PDSA-e-card p{
+#education .edu-block p{
     padding: 0 10px 10px 10px;
-}
-
-#education #bhavans-card img,#education #awh-card img,#education #PDSA-e-card img{
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 @media screen and (max-width: 330px) {
@@ -537,66 +539,60 @@ main{
         font-size: 0.8rem;
     }
 
-    #education #hd2,#education #bhavans-card h2,#education #awh-card h2,#education #PDSA-e-card h2{
+    #education .edu-block h2{
         font-size: 1.3rem;
     }
 
-    #education #bhavans-card p,#education #awh-card p,#education #PDSA-e-card p{
+    #education .edu-block p{
         font-size: 0.8rem;
-    }
+    } 
     
 }
 
-@media screen and (min-width: 1100px){
-    #education{
-        min-height: 100vh;
+@media screen and (min-width: 600px){
+   
+    #education .edu-block{
+        display: flex;
+        max-width: 800px;
+    }
+    #education .edu-block div{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-    }
-    #education #bhavans-section{
-        padding: 20px;
+    #education .edu-block img{
+        width: 300px;
+        height: 100%;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
     }
 
-    #education h1{
-        text-align: center;
-    }
-    #education em{
-        font-size: 1.5rem;
+    #education .edu-block p{
+        height: 100%;
+        margin: 2em 0;
     }
     
-    #education #awh-section{
-        padding: 20px;
-       
-    }
-    #education #awh-card img{
-        height: auto;
-    
-    }
-
-    #education #PDSA-e-section{
-        padding: 20px;
-    }
-
-    #education #PDSA-e-section img{
-        height: 18em;
-    }
 }
 
 @media screen and (min-width: 1400px){
-    #education #hd1{
+     #education #hd1{
         font-size: 3rem;
     }
 
-    #education #bhavans-card h2,#education #awh-card h2,#education #PDSA-e-card h2{
+    #education .edu-block h2{
         font-size: 2rem;
     }
 
-    #education #bhavans-card p,#education #awh-card p,#education #PDSA-e-card p{
+    #education .edu-block p{
         font-size: 1.5rem;
     }
     
     #education #hd2{
         font-size: 2rem;
-    }
+    } 
 }
 
 /*===================skills============================*/
@@ -823,6 +819,22 @@ main{
 }
 
 /*=================portfolio======================*/
+
+/* =================
+    To add a new project
+
+    in mobile mode
+    1) add one more row in grid-template-rows
+    2) then go to the card section and add the grid position
+    3) change the grid position of view more button accordingly
+
+    in desktop mode
+    1)check if one more row is needed
+    2) if yes, add the row and go to the card section and give the grid position of the project
+    3) if no, go to the card section and give the grid position
+
+    finally, make sure to add the markup in the project.html file
+===================*/
 #portfolio{
     background-image: linear-gradient(#d1ebff,white, #d1ebff);
     display: grid;
@@ -883,6 +895,9 @@ main{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+/* ================= 
+    the cards section 
+    ================*/
 
 /* ======= PDSA card ======== */
 #portfolio #PDSA-section{
@@ -894,7 +909,6 @@ main{
     grid-column: 1 / -1;
     grid-row: 3 / 4;
 }
-
 
 /* ====== personal website card ========*/
 #portfolio #pw-section{
@@ -978,6 +992,10 @@ main{
     #portfolio h1{
         text-align: center;
     }
+
+    /* ================= 
+    the cards section 
+    ================*/
 
     /*PDSA card*/
     #portfolio #PDSA-section{

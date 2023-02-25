@@ -25,13 +25,19 @@
         <!-- <link rel="stylesheet" href="styles/reset.css"> -->
         <link rel="stylesheet" href="../styles/all.css">
         <link rel="stylesheet" href="../styles/common.css">
-        <link rel="stylesheet" href="../styles/edu-style.css">
+        <link rel="stylesheet" href="../styles/index-style.css">
     
         <!-- == Scroll reveal == -->
         <!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> 
         -->
         <script src="../scripts/scrollreveal.js"></script>
-    
+        <style>
+            main{
+                display: block;
+                width: 100%;
+            }
+        </style>
+ 
     
         <!-- Helps prevent duplicate content issues
             <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-read.html">
@@ -48,121 +54,55 @@
         <title>Sreekanth S | Personal Website | Achievements</title>
     </head>
     
-<body onload="myFunction()">
-    <div id="load-section">
-        <div class="loader"></div>
-
-    </div>
-    <main id="myDiv">
-        <div id="nav-gap">
+<body>
+        <div id="education">
+            <h1 id="hd1"  class="main-heading">Education</h1>
             
-        </div>
-        
-        <!-- == The navbar begins == -->
-        <nav>       
-            <div class="logo">
-                <h4><i class="fa-solid fa-flag-checkered"></i> ACHIEVEMENTS</h4>
-            </div>
-        
-            <ul id="nav-link-id">
-                <li><a href="../index.html"><i class="fa-solid fa-house-chimney"></i> HOME</a></li>
-                <li><a href="projects.html"><i class="fa-solid fa-code-compare"></i> PROJECTS</a></li>
-                <li><a href="skills.html"><i class="fa-solid fa-laptop-code"></i> MY SKILLS</a></li>
-            </ul>
+            <em>"Education Is Not The Learning Of Facts, But The Training Of The Mind To Think."</em>
             
-            <i id="togglenav" class="fa-solid fa-bars"></i>
-        </nav>
-    
-        <!-- == main section begins ==-->
-        <section id="education">
-            
-            <div id="bhavans-section" class="section">
-                <div class="card">
+            <div class="edu-sec">
+                <div id="bhavans-card" class="ed-card edu-block">
                     <a href="https://bhavansschoolchevayur.org/#book5/undefined" target="_blank" rel="noopener noreferrer">
                         <img src="../sources/images/bhavans.jpeg" alt="picture of bhavans school">
-                        
+
                     </a>
-                    <h2>High School | Bio Maths</h2>
-                    <p>Bharatiya Vidya Bhavan, Chevayur | CBSE | 2018-2020</p>
+                    <div>
+                        <h2>High School | Bio Maths</h2>
+                        <p>Bharatiya Vidya Bhavan, Chevayur | CBSE | 2018-2020</p>
+                    </div>
                 </div>
             </div>
-
-            <div id="awh-section" class="section">
-                <div id="awh-card" class="card">
+            
+            <div  class="edu-sec">
+                <div id="awh-card" class="ed-card edu-block">
                     <a href="https://awhengg.org/" target="_blank" rel="noopener noreferrer">
 
                         <img src="../sources/images/awh.jpeg" alt="picture of AWH Engineering College">
                     </a>
-                    <h2>UG | BTech in CSE</h2>
-                    <p>AWH Engineering College, Kuttikattoor | KTU | 2020-2024</p>
+                    <div>
+                        <h2>UG | BTech in CSE</h2>
+                        <p>AWH Engineering College, Kuttikattoor | KTU | 2020-2024</p>
+                    </div>
                 </div>
             </div>
 
-            <div id="PDSA-e-section" class="section">
-                <div id="PDSA-e-card" class="card">
+            <h1 id="hd2">My Achievements</h1>
+
+            <div class="edu-sec">
+                <div id="PDSA-e-card" class="ed-card edu-block">
                     <img src="../sources/images/PDSA.jpg" alt="pdsa certificate">
-                    <h2>MOOC Course | NPTEL</h2>
-                    <p>Programing, Data Structures and Algorithms Using Python | Completed on March 2022</p>
+                    <div>
+                        <h2>MOOC Course | NPTEL</h2>
+                        <p>Programing, Data Structures and Algorithms Using Python | Completed on March 2022</p>
+                    </div>
 
                 </div>
-
-
-        </section>
-        
-        
-        <!-- == The footer section begins== -->
-        <footer>
+            </div>
             
-            <div class="thanks">
-                <h2 >Sreekanth's Personal Website</h2>
-                <p>Thank you for visiting my personal website. You can connect with me over social media.</p>
-                <p>Some parts of this website is still under development and will be finished soon.</p>
+            <div id="edu-more" class="next-page-button-section">
+                <a href="../index.html">Go Back</a>
             </div>
-
-            <div class="quick-links">
-                <h2>Quick Links</h2>
-                <ul class="quick-nav-links">
-                    <li><a href="../index.html"><i class="fa-solid fa-link"></i> HOME</a></li>
-                    <li><a href="projects.html"><i class="fa-solid fa-link"></i> PROJECTS</a></li>
-                    <li><a href="skills.html"><i class="fa-solid fa-link"></i> MY SKILLS</a></li>
-                </ul>    
-            </div>
-
-            <div class="contact-info">
-                <h2>Contact Links</h2>
-                <div id="social-links">
-                    <a href="mailto:sreekanthsanthosh17@gmail.com" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://www.twitter.com/_Sreekanth_S_/" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/sreekanth-s-663418232" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-brands fa-linkedin"></i></a> 
-                    <a href="https://github.com/sreekanths-24" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.youtube.com/@Sreekanth_S" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-            <hr>
-            <p id="mes">Made with ❤️ By Sreekanth S</p>
-
-        </footer>
-        <!-- == The footer section ends== -->
-
-    </main>
-    <script src="../scripts/main.js"></script>
-    
-        
-    <script>
-        const icon = document.getElementById('togglenav');
-        const menu = document.getElementById('nav-link-id');
-
-        icon.onclick = function(){
-            menu.classList.toggle('nav-active');
-        }
-
-        document.onclick = function(clickEvent){
-            if(clickEvent.target.id !== 'nav-link-id' && clickEvent.target.id !== 'togglenav'){
-                menu.classList.remove('nav-active');    
-            }
-        }
-
-    </script>
+        </div>
    
 </body>
 </html>

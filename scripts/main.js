@@ -38,7 +38,6 @@ ScrollReveal().reveal(".cards",{
 });
 
 ScrollReveal().reveal(".ed-card",{
-    interval: 200,
     easing: 'ease',
     origin:'bottom',
     distance:'80px',
