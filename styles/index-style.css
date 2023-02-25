@@ -827,7 +827,7 @@ main{
     background-image: linear-gradient(#d1ebff,white, #d1ebff);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(7, auto);
     
 }
 
@@ -889,24 +889,33 @@ main{
     grid-column: 1 / -1;
     grid-row: 2 / 3;
 }
-
-
-/* ==== Google clone card ======= */
-#portfolio #gc-section{
+/* ====== js projects card ========*/
+#portfolio #jsp-section{
     grid-column: 1 / -1;
     grid-row: 3 / 4;
 }
+
 
 /* ====== personal website card ========*/
 #portfolio #pw-section{
     grid-column: 1 / -1;
     grid-row: 4 / 5;
 }
+/* ====== tinder card ========*/
+#portfolio #tinder-section{
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+}
 
+/* ==== Google clone card ======= */
+#portfolio #gc-section{
+    grid-column: 1 / -1;
+    grid-row: 6 / 7;
+}
 /*===== veiw more button =========*/
 #portfolio .veiw-more-p{
     grid-column: 1 / -1;
-    grid-row: 5 / 6;
+    grid-row: 7 / 8;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -954,7 +963,7 @@ main{
     #portfolio{
         background-image: linear-gradient(white, white, #d1ebff);
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
         min-height: 100vh;
     }
 
@@ -963,7 +972,7 @@ main{
     }
 
     #portfolio .pro-cards div{
-        min-height: 170px;
+        min-height: 150px;
     }
 
     #portfolio h1{
@@ -975,17 +984,28 @@ main{
         grid-column: 1 / 3;
         grid-row: 2 / 3;
     }
-
-    /*Google clone card*/
-    #portfolio #gc-section{
+    
+    /*jsp card*/
+    #portfolio #jsp-section{
         grid-column: 3 / 5;
         grid-row: 2 / 3;
     }
-
     /*personal website card*/
     #portfolio #pw-section{
         grid-column: 5 / 7;
         grid-row: 2 / 3;
+    }
+    
+    /*tinder clone card*/
+    #portfolio #tinder-section{
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    /*Google clone card*/
+    #portfolio #gc-section{
+        grid-column: 3 / 5;
+        grid-row: 3 / 4;
     }
 }
 

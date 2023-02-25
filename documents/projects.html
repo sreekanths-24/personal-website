@@ -25,12 +25,20 @@
         <!-- <link rel="stylesheet" href="styles/reset.css"> -->
         <link rel="stylesheet" href="../styles/all.css">
         <link rel="stylesheet" href="../styles/common.css">
-        <link rel="stylesheet" href="../styles/project-style.css">
+        <!-- <link rel="stylesheet" href="../styles/project-style.css"> -->
+        <link rel="stylesheet" href="../styles/index-style.css">
     
         <!-- == Scroll reveal == -->
-        <!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> 
-        -->
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> 
+        
         <script src="../scripts/scrollreveal.js"></script>
+
+        <style>
+            main{
+                display: block;
+                width: 100%;
+            }
+        </style>
  
         <!-- Helps prevent duplicate content issues
             <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-read.html">
@@ -47,120 +55,81 @@
         <title>Sreekanth S | Personal Website | My Projects</title>
     </head>
     
-<body onload="myFunction()">
-    <div id="load-section">
-        <div class="loader"></div>
-
-    </div>
-    <main id="myDiv">
-        <div id="nav-gap">
-            
-        </div>
-        
-        <!-- == The navbar begins == -->
-        <nav>       
-            <div class="logo">
-                <h4><i class="fa-solid fa-code-compare"></i> PROJECTS</h4>
-            </div>
-        
-            <ul id="nav-link-id">
-                <li><a href="../index.html"><i class="fa-solid fa-house-chimney"></i> HOME</a></li>
-                <li><a href="education.html"><i class="fa-solid fa-flag-checkered"></i> ACHIEVEMENTS</a></li>
-                <li><a href="skills.html"><i class="fa-solid fa-laptop-code"></i> MY SKILLS</a></li>
-            </ul>
-            
-            <i id="togglenav" class="fa-solid fa-bars"></i>
-        </nav>
+<body>
+    <main>
         <!-- == The projects begins == -->
         <div id="portfolio">
-                            
-            <div id="PDSA-section" class="section">
-                <div id="PDSA-card" class="card">
+            
+            <h1 class="main-heading">Projects Made</h1>
+            
+            <div id="PDSA-section" class="project-card">
+                <div id="PDSA-card" class="ed-card edu-card pro-cards">
                     <img src="../sources/projects-images/PDSA-site.png" alt="picture of PDSA website">
-                    <h2>PDSA Textbook</h2>
-                    <p>Website to help my friends complete the NPTEL course PDSA using Python.</p>
+                    <div>
+                        <h2>PDSA Textbook</h2>
+                        <p>Website to help my friends complete the NPTEL course PDSA using Python.</p>
+                    </div>
                     <a href="https://github.com/sreekanths-24/PDSA-Textbook" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Code</a>
                     <a href="https://sreekanths-24.github.io/PDSA-Textbook/index.html" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> View Website</a>
                 </div>
             </div>
 
-            <div id="gc-section" class="section">
-                <div id="gc-card" class="card">
+            <div id="gc-section" class="project-card">
+                <div id="gc-card" class="ed-card edu-card pro-cards">
                     <img src="../sources/projects-images/google-clone.png" alt="picture of google clone">
-                    <h2>Google Clone</h2>
-                    <p>A clone of google's search engine (just the design). best if you open it on laptop or pc.</p>
+                    <div>
+                        <h2>Google Clone</h2>
+                        <p>A clone of google's search engine (just the design). best if you open it on laptop or pc.</p>
+                    </div>
                     <a href="https://github.com/sreekanths-24/google-clone" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Code</a>
                     <a href="https://sreekanths-24.github.io/google-clone/index.html" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> View Website</a>
                 </div>
             </div>
 
-            <div id="pw-section" class="section">
-                <div id="pw-card" class="card">
-                    <img src="../sources/projects-images/pw5.png" alt="picture of my personal website">
-                    <h2>My Personal Website</h2>
-                    <p>Its the website you are looking at right now.</p>
+            <div id="tinder-section" class="project-card">
+                <div id="tinder-card" class="ed-card edu-card pro-cards">
+                    <img src="../sources/projects-images/tinder-clone.png" alt="picture of tinder clone">
+                    <div>
+                        <h2>Tinder Clone</h2>
+                        <p>A clone of Tinder (just the design) made with HTML and CSS. best if you open it on laptop or pc.</p>
+                    </div>
+                    <a href="https://github.com/sreekanths-24/tinder-clone" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Code</a>
+                    <a href="https://sreekanths-24.github.io/tinder-clone/index.html" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> View Website</a>
+                </div>
+            </div>
+
+            <div id="jsp-section" class="project-card">
+                <div id="jsp-card" class="ed-card edu-card pro-cards">
+                    <img src="../sources/projects-images/jsp.png" alt="picture of jsp website">
+                    <div>
+                        <h2>JavaScript Projects</h2>
+                        <p>A collection of simple javascript projects for beginners. I am still working on this.</p>
+                    </div>
+                    <a href="https://github.com/sreekanths-24/js-projects-beginners" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Code</a>
+                    <a href="https://js-projects-beginners.netlify.app/" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> View Website</a>
+                </div>
+            </div>
+
+            <div id="pw-section" class="project-card">
+                <div id="pw-card" class="ed-card edu-card pro-cards">
+                    <img src="../sources/projects-images/pw6.png" alt="picture of my personal website">
+                    <div>
+                        <h2>My Personal Website</h2>
+                        <p>Its the website you are looking at right now.</p>
+                    </div>
                     <a href="https://github.com/sreekanths-24/personal-website" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Code</a>
                     <a href="#about" class="p-links" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> View Website</a>
                 </div>
             </div>
 
+            <div class="veiw-more-p">
+                <p><a href="../index.html">Go Back</a></p>
+            </div>
+
         </div>
         <!-- == The projects ends == -->
 
-        
-        <!-- == The footer section begins== -->
-        <footer>
-            
-            <div class="thanks">
-                <h2 >Sreekanth's Personal Website</h2>
-                <p>Thank you for visiting my personal website. You can connect with me over social media.</p>
-                <p>Some parts of this website is still under development and will be finished soon.</p>
-            </div>
-
-            <div class="quick-links">
-                <h2>Quick Links</h2>
-                <ul class="quick-nav-links">
-                    <li><a href="../index.html"><i class="fa-solid fa-link"></i> HOME</a></li>
-                    <li><a href="education.html"><i class="fa-solid fa-link"></i> ACHIEVEMENTS</a></li>
-                    <li><a href="skills.html"><i class="fa-solid fa-link"></i> MY SKILLS</a></li>
-                </ul>    
-            </div>
-
-            <div class="contact-info">
-                <h2>Contact Links</h2>
-                <div id="social-links">
-                    <a href="mailto:sreekanthsanthosh17@gmail.com" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://www.twitter.com/_Sreekanth_S_/" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/sreekanth-s-663418232" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-brands fa-linkedin"></i></a> 
-                    <a href="https://github.com/sreekanths-24" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.youtube.com/@Sreekanth_S" target="_blank" rel="noopener noreferrer" class="cards"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-            <hr>
-            <p id="mes">Made with ❤️ By Sreekanth S</p>
-
-        </footer>
-        <!-- == The footer section ends== -->
-
     </main>
-    <script src="../scripts/main.js"></script>
-    
-        
-    <script>
-        const icon = document.getElementById('togglenav');
-        const menu = document.getElementById('nav-link-id');
-
-        icon.onclick = function(){
-            menu.classList.toggle('nav-active');
-        }
-
-        document.onclick = function(clickEvent){
-            if(clickEvent.target.id !== 'nav-link-id' && clickEvent.target.id !== 'togglenav'){
-                menu.classList.remove('nav-active');    
-            }
-        }
-
-    </script>
    
 </body>
 </html>
