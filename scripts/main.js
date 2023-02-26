@@ -8,6 +8,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+//note closing
+noteElement = document.getElementById("note");
+closeElement = document.getElementById("close-ele");
+
+closeElement.addEventListener("click", function() {
+    noteElement.style.display = "none";
+    closeElement.style.display = "none";
+});
+
 //typed
 var typed = new Typed('.typing', {
     strings: [
@@ -30,6 +39,12 @@ var typed = new Typed('.typing', {
 
 //scroll reveal
 ScrollReveal().reveal(".cards",{
+    easing: 'ease-out',
+    scale: 0.5,
+    reset: true,
+    duration: 400
+});
+ScrollReveal().reveal(".cards2",{
     interval: 200,
     easing: 'ease-out',
     scale: 0.5,

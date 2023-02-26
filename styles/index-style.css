@@ -317,6 +317,22 @@ main{
     border-radius: 10px;
 }
 
+.close-note{
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    height: auto;
+    width: fit-content;
+    background-color: #1ca7ec;
+    font-size: 20px;
+    word-spacing: 5px;
+    margin: 0 20px 20px 20px;
+    cursor: pointer;
+}
+
+.close-note i{
+    font-size: 23px;
+}
 #about #note span{
     font-size: 1.2rem;
 }
@@ -572,7 +588,6 @@ main{
 
     #education .edu-block p{
         height: 100%;
-        margin: 2em 0;
     }
     
 }
