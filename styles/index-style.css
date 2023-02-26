@@ -886,7 +886,7 @@ main{
     text-align: center;
 }
 
-#portfolio .pro-cards{
+#portfolio .project-card .pro-cards{
     max-width: 500px;
     margin: 0 auto;
     padding-bottom: 5px;
@@ -896,15 +896,15 @@ main{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#portfolio .pro-cards div h2{
+#portfolio .project-card .pro-cards div h2{
     padding: 10px 10px;
 }
 
-#portfolio .pro-cards div p{
+#portfolio .project-card .pro-cards div p{
     padding: 0 10px 10px 10px;
 }
 
-#portfolio .pro-cards img{
+#portfolio .project-card .pro-cards img{
     width: 100%;
     height: auto;
     border-top-left-radius: 10px;
