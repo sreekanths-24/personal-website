@@ -14,7 +14,6 @@ closeElement = document.getElementById("close-ele");
 
 closeElement.addEventListener("click", function() {
     noteElement.style.display = "none";
-    closeElement.style.display = "none";
 });
 
 //typed
