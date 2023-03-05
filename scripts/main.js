@@ -9,12 +9,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 //note closing
-noteElement = document.getElementById("note");
-closeElement = document.getElementById("close-ele");
+// noteElement = document.getElementById("note");
+// closeElement = document.getElementById("close-ele");
 
-closeElement.addEventListener("click", function() {
-    noteElement.style.display = "none";
-});
+// closeElement.addEventListener("click", function() {
+//     noteElement.style.display = "none";
+// });
 
 //typed
 var typed = new Typed('.typing', {
