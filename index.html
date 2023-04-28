@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="styles/index-style.css">
 
     <!-- == Scroll reveal == -->
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
     <!-- <script src="scripts/scrollreveal.js"></script> -->
 
     <!-- == Email js == -->
@@ -53,8 +53,8 @@
 </head>
 <body onload="myFunction()">
     <div id="load-section">
-        <!-- <div class="loader"></div> -->
-        <img src="https://gifimage.net/wp-content/uploads/2018/04/loading-bar-animated-gif-transparent-background-6.gif" alt="loading animation">
+        <div class="loader"></div>
+        <!-- <img src="https://gifimage.net/wp-content/uploads/2018/04/loading-bar-animated-gif-transparent-background-6.gif" alt="loading animation"> -->
 
     </div>
 <!-- 
@@ -134,10 +134,10 @@
         <!-- == The about section ends == -->
         
         <!-- == parallax effect== -->
-        <div id="parallax1">
+        <!-- <div id="parallax1">
 
-        </div>
-
+        </div> -->
+        <canvas id="bubbles"></canvas>
         
         <!-- == The education begins == -->
         <div id="education">
@@ -368,7 +368,7 @@
             </div>
         </div>
         <!-- == The contact section ends== -->        
-        
+
         <!-- == The footer section begins== -->
         <footer>
             
@@ -429,5 +429,6 @@
             }
         }
     </script>
+    <script src="scripts/bubbles.js"></script>
 </body>
 </html>

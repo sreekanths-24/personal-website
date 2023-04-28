@@ -49,7 +49,7 @@
     width: 15em;
     height: auto;
 }
-/* .loader {
+.loader {
     border: 8px solid #f3f3f3;
     border-radius: 50%;
     border-top: 8px solid #d1ebff;
@@ -72,7 +72,7 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-*/
+
 
 main{
     display: none;
@@ -109,10 +109,10 @@ main{
 /* Extra small devices (phones, 600px and down) */
 /*==============common to this media queiry=====================*/
 #nav-gap{
-    height: 8.8vh;
+    height: 9vh;
     min-height: 60px;
     max-height: 100px;
-    background-color: #d1ebff;
+    background-color: #1ca7ec;
 }
 
 
@@ -133,22 +133,24 @@ main{
 /*==================nav bar ======================*/
 @media screen and (min-width: 250px) and (max-width: 900px){
     nav{
-        background-color: #003459;
+        background-color: #141218;
         display: flex;
-        color: white;
+        color: #1ca7ec;
         letter-spacing: 3px;
         align-items: center;
         justify-content: space-around;
         position: fixed;
-        top: 0;
+        top: 5px;
         left: 0;
         right: 0;
-        width: 100%;
+        margin: 0 auto;
+        width: 98%;
         min-height: 60px;
-        height: 9vh;
+        height: 8vh;
         max-height: 100px;
         z-index: 1;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
     }
     
     nav #nav-link-d{
@@ -160,7 +162,7 @@ main{
     }
     
     nav a{
-        color: white;
+        color: #1ca7ec;
     }
     
     nav ul{
@@ -170,14 +172,13 @@ main{
         min-height: fit-content;
     }
     .nav-active{
-        background-color: #003459;
+        background-color: #141218;
         position: fixed;
-        bottom: 0;
-        width: 100%;
+        bottom: 5px;
+        width: 98%;
         height: 50vh;
         min-height: fit-content;
-        border-top-left-radius: 70px;
-        border-top-right-radius: 70px;
+        border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         list-style: none;
         display: flex;
@@ -186,6 +187,7 @@ main{
         justify-content: space-evenly;
         font-size: 1.5rem;
         transform: translateY(0%);
+        transition: 0.5s;
     }
 }
 
@@ -208,7 +210,7 @@ main{
         left: 0;
         width: 20%;
         height: 100vh;
-        background-color: #003459;
+        background-color: #141218;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -272,7 +274,8 @@ main{
 
 /*==================about==========================*/
 #about{
-    background-image: linear-gradient(white, #d1ebff);
+    background-color: #0e0d0d;
+    color: #f3f3f3;
     display: grid;
     grid-template-columns: repeat(6, 1fr) ;
     grid-template-rows: auto auto 7.5rem auto auto;
@@ -466,7 +469,7 @@ main{
         font-size: 2rem;
     }
 }
-/*================parallax=========================*/
+/*================parallax=========================
 #parallax1{
     background-image: url(../sources/images/me4.jpg);
     -webkit-background-size: cover;
@@ -490,8 +493,22 @@ main{
     #parallax1{
         height: 200px;
     }
-}
+}*/
 
+
+/*=================bubbles divider====================*/
+
+canvas { 
+   overflow: hidden;
+   width:100%;
+   height:50vh;
+   background-color:#0e0d0d;
+}
+@media screen and (min-width: 500px){
+    canvas{
+        display: none;
+    }   
+}
 /*=================education====================*/
 #education{
     background-image: linear-gradient(#d1ebff, #37caec);
@@ -537,11 +554,11 @@ main{
 }
 
 #education .edu-block h2{
-    margin: 10px 10px;
+    margin: 10px 20px;
 }
 
 #education .edu-block p{
-    margin: 10px 10px;
+    margin: 10px;
     padding: 0 10px 10px 10px;
 }
 
@@ -1067,7 +1084,7 @@ main{
 /*=================contact me ====================*/
 
 #contact-me{
-    background-image: linear-gradient(#d1ebff, white);
+    background-image: linear-gradient(#0e0d0d,#141218);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -1084,6 +1101,7 @@ main{
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
+    color: white;
 }
 
 #contact-me #my-form{
@@ -1098,7 +1116,7 @@ main{
     border-radius: 10px;
     text-align: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     min-height: 50px;
     background-image: linear-gradient(#4adede ,#1ca7ec);
     background-attachment: fixed;
@@ -1203,8 +1221,8 @@ main{
 
 /*=================footer======================*/
 footer{
-    background-color: #00171f;
-    color: rgb(230, 220, 220);
+    background-color: #141218;
+    color: white;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, auto);
@@ -1246,6 +1264,7 @@ footer ul li{
 footer h2{
     margin: 20px;
     font-size: 2.5rem;
+    color: #1ca7ec;
 }
 
 footer p{
@@ -1266,12 +1285,12 @@ footer #mes{
     margin: 5px;
 }
 footer a{
-    color: rgb(230, 220, 220);
+    color: white;
 
 }
 
 footer .quick-nav-links a{
-    color: rgb(230, 220, 220);
+    color: white;
     font-size: 1.5rem;
 }
 
