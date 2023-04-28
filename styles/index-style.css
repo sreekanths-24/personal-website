@@ -45,11 +45,13 @@
     /* background-image: linear-gradient(135deg, white, #d1ebff); */
 }
 
+/*
 #load-section img{
     width: 15em;
     height: auto;
 }
-/* .loader {
+*/
+ .loader {
     border: 8px solid #f3f3f3;
     border-radius: 50%;
     border-top: 8px solid #d1ebff;
@@ -72,13 +74,12 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-*/
 
 main{
     display: none;
 }
   
-/*===============modal section=================*/
+/*===============modal section=================
 .modal-message{
     z-index: 2;
     width: 90%;
@@ -103,7 +104,7 @@ main{
     display: block;
     margin: 0 5px;
     text-align: end;
-}
+}*/
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -186,6 +187,7 @@ main{
         justify-content: space-evenly;
         font-size: 1.5rem;
         transform: translateY(0%);
+        transition: 0.5s;
     }
 }
 
@@ -537,7 +539,7 @@ main{
 }
 
 #education .edu-block h2{
-    margin: 10px 10px;
+    margin: 10px 20px;
 }
 
 #education .edu-block p{
@@ -1098,7 +1100,7 @@ main{
     border-radius: 10px;
     text-align: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     min-height: 50px;
     background-image: linear-gradient(#4adede ,#1ca7ec);
     background-attachment: fixed;
