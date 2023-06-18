@@ -25,17 +25,154 @@
         <!-- <link rel="stylesheet" href="styles/reset.css"> -->
         <link rel="stylesheet" href="../styles/all.css">
         <link rel="stylesheet" href="../styles/common.css">
-        <link rel="stylesheet" href="../styles/index-style.css">
+        <!-- <link rel="stylesheet" href="../styles/index-style.css"> -->
     
         <!-- == Scroll reveal == -->
         <!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> 
         -->
         <script src="../scripts/scrollreveal.js"></script>
         <style>
-            main{
-                display: block;
-                width: 100%;
+            .next-page-button-section{
+                text-align: center;
+                font-size: 1.5rem;
+                width: 50%;
+                max-width: 200px;
+                margin: 20px auto 0;
+                min-height: 3vh;
+                background-color: #125488;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                padding: 0.4em;
             }
+
+            .next-page-button-section a{
+                color: white;
+                width: 100%;
+                height: 100%;
+            }
+
+            .next-page-button-section a::selection{
+                background-color: #125488;
+            }
+            #education{
+                background-image: linear-gradient(#d1ebff, #37caec);
+                padding-bottom: 1em;
+                width: 100%;
+                min-height: 100vh;
+            }
+
+            #education #hd1{
+                font-size: 2.5rem;
+                display: block;
+                padding-top: 20px;
+                margin-left: 20px;
+            }
+
+
+            #education .edu-sec{
+                width: 100%;
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;  
+                margin: 2em 0;  
+            }
+
+            #education .edu-block{
+                width: 90%;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            }
+            
+            #education .edu-block img{
+                width: 100%;
+                height: 200px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            } 
+            #education .edu-block div{
+                width: 100%;
+                height: 100%;
+            }
+            #education .edu-block h2{
+                margin: 10px 20px;
+            }
+
+            #education .edu-block p{
+                margin: 10px 10px;
+                padding: 0 10px 10px 10px;
+            }
+
+            @media screen and (max-width: 330px) {
+                #education #hd1{
+                    font-size: 2rem;
+                }
+
+                #education em{
+                    font-size: 0.8rem;
+                }
+
+                #education .edu-block h2{
+                    font-size: 1.3rem;
+                }
+
+                #education .edu-block p{
+                    font-size: 0.8rem;
+                } 
+                
+            }
+
+            @media screen and (min-width: 600px){
+            
+                #education .edu-block{
+                    display: flex;
+                    max-width: 800px;
+                }
+
+
+                #education .edu-block h2{
+                    font-size: 1.8rem;
+                }
+
+                #education .edu-block div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                #education .edu-block img{
+                    width: 300px;
+                    height: 100%;
+                    border-bottom-left-radius: 10px;
+                    border-top-right-radius: 0;
+                }
+
+                #education .edu-block p{
+                    text-align: center;
+                }
+                
+            }
+
+            @media screen and (min-width: 1400px){
+                #education #hd1{
+                    font-size: 3rem;
+                }
+
+                #education .edu-block h2{
+                    font-size: 2rem;
+                }
+
+                #education .edu-block p{
+                    font-size: 1.5rem;
+                }
+                
+                #education #hd2{
+                    font-size: 2rem;
+                } 
+            }
+
         </style>
  
     
@@ -56,38 +193,8 @@
     
 <body>
         <div id="education">
-            <h1 id="hd1"  class="main-heading">Education</h1>
+            <h1 id="hd1"  class="main-heading">My Achievements</h1>
             
-            <em>"Education Is Not The Learning Of Facts, But The Training Of The Mind To Think."</em>
-            
-            <div class="edu-sec">
-                <div id="bhavans-card" class="ed-card edu-block">
-                    <a href="https://bhavansschoolchevayur.org/#book5/undefined" target="_blank" rel="noopener noreferrer">
-                        <img src="../sources/images/bhavans.jpeg" alt="picture of bhavans school">
-
-                    </a>
-                    <div>
-                        <h2>High School | Bio Maths</h2>
-                        <p>Bharatiya Vidya Bhavan, Chevayur | CBSE | 2018-2020</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div  class="edu-sec">
-                <div id="awh-card" class="ed-card edu-block">
-                    <a href="https://awhengg.org/" target="_blank" rel="noopener noreferrer">
-
-                        <img src="../sources/images/awh.jpeg" alt="picture of AWH Engineering College">
-                    </a>
-                    <div>
-                        <h2>UG | BTech in CSE</h2>
-                        <p>AWH Engineering College, Kuttikattoor | KTU | 2020-2024</p>
-                    </div>
-                </div>
-            </div>
-
-            <h1 id="hd2">My Achievements</h1>
-
             <div class="edu-sec">
                 <div id="PDSA-e-card" class="ed-card edu-block">
                     <img src="../sources/images/PDSA.jpg" alt="pdsa certificate">

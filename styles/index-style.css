@@ -627,7 +627,7 @@ main{
 #skills{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     background-image: linear-gradient(#37caec,#d1ebff);
     
 }
@@ -646,7 +646,7 @@ main{
 
 #skill-body{
     grid-column: 1 / -1;
-    grid-row: 2 / -1;
+    grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto auto auto auto auto;
@@ -738,6 +738,11 @@ main{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+
+#skills #view-more-skill{
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
 }
 
 @media screen and (max-width:330px){
@@ -1077,7 +1082,7 @@ main{
 /*=================contact me ====================*/
 
 #contact-me{
-    background-image: linear-gradient(#d1ebff, white);
+    background-color: #d1ebff;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
