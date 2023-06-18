@@ -133,7 +133,7 @@ main{
 
 /*==================nav bar ======================*/
 @media screen and (min-width: 250px) and (max-width: 900px){
-    nav{
+    nav {
         background-color: #003459;
         display: flex;
         color: white;
@@ -152,45 +152,49 @@ main{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
-    nav #nav-link-d{
-        display: none;
+    nav #nav-link-d {
+    display: none;
     }
     
-    nav .logo,nav i{
-        font-size: 1.5rem;
+    nav .logo,
+    nav i {
+    font-size: 1.5rem;
     }
     
-    nav a{
-        color: white;
+    nav a {
+    color: white;
     }
     
-    nav ul{
-        position: fixed;
-        bottom: -50vh;
-        transform: translateY(100%);
-        min-height: fit-content;
+    nav ul {
+    position: fixed;
+    bottom: -50vh;
+    transform: translateY(100%);
+    min-height: fit-content;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
-    .nav-active{
-        background-color: #003459;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 50vh;
-        min-height: fit-content;
-        border-top-left-radius: 70px;
-        border-top-right-radius: 70px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        list-style: none;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-        font-size: 1.5rem;
-        transform: translateY(0%);
-        transition: 0.5s;
+    
+    .nav-active {
+    background-color: #003459;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50vh;
+    min-height: fit-content;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    transform: translateY(0%);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
+    
 }
-
+      
 @media screen and (max-width: 330px) {
     nav .logo,nav i{
         font-size: 1.2rem;
@@ -531,13 +535,17 @@ main{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+ 
 #education .edu-block img{
     width: 100%;
     height: 200px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+} 
+#education .edu-block div{
+    width: 100%;
+    height: 100%;
 }
-
 #education .edu-block h2{
     margin: 10px 20px;
 }
