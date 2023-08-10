@@ -625,6 +625,60 @@ main{
 
 /*===================skills============================*/
 #skills{
+    background-image: linear-gradient(#37caec,#d1ebff);
+
+}
+#skills h1{
+    font-size: 2.5rem;
+    display: block;
+    margin-left: 20px;
+}
+.new-skill-body{
+    padding: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width:330px){
+    #skills h1{
+        font-size: 2rem;
+    }
+    
+    /*skill images
+    #skills #skill-body img{
+        width: 50px;
+    }*/
+
+    .new-skill-body{
+        padding: 1em;
+    }
+    .card h2{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width: 992px){
+    
+    #skills{
+        background-image: linear-gradient(#37caec, white);    
+        text-align: center;
+    }
+    .new-skill-body{
+        padding: 3em 10em;
+        width: 100%;
+    
+    }
+    
+}
+@media screen and (min-width: 1400px){
+    #skills h1{
+        font-size: 3rem;
+    }
+
+    /* #skills #skill-body .skill-block h2{
+        font-size: 2rem;
+    } */
+}
+/*===================skills============================
+#skills{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto auto auto;
@@ -666,62 +720,62 @@ main{
 }
 
 
-/*html block*/
+/*html block
 #skills #html5{
     grid-column: 1 / 4;
     grid-row: 1 / 2;
 }
-/*css block*/
+/*css block
 #skills #css3{
     grid-column: 4 / -1;
     grid-row: 1 / 2;
 }
 
-/*javascript*/
+/*javascript
 #skills #javascript{
     grid-column: 1 / 4;
     grid-row: 2 / 3;
 }
-/*sql*/
+/*sql
 #skills #sql{
     grid-column: 4 / -1;
     grid-row: 2 / 3;
 }
 
-/*python block*/
+/*python block
 #skills #python3{
     grid-column: 1 / 4;
     grid-row: 3 / 4;
 }
-/*c block*/    
+/*c block  
 #skills #clang{
     grid-column: 4 / -1;
     grid-row: 3 / 4;
 }
 
-/*vscode block*/
+/*vscode block
 #skills #vscode{
     grid-column: 1 / 4;
     grid-row: 4 / 5;
 }
 
-/*netlify*/
+/*netlify/
 #skills #netlify{
     grid-column: 4 / -1;
     grid-row: 4 / 5;
 }
-/*git block*/    
+/*git block*    
 #skills #git-vcs{
     grid-column: 1 / 4;
     grid-row: 5 / 6;
 }
-/*github block*/    
+/*github block    
 #skills #github{
     grid-column: 4 / -1;
     grid-row: 5 / 6;
 }
 
-/*skill images*/
+/*skill images
 #skills #skill-body img{
     width: 60px;
     height: auto;
@@ -750,7 +804,7 @@ main{
         font-size: 2rem;
     }
     
-    /*skill images*/
+    /*skill images
     #skills #skill-body img{
         width: 50px;
     }
@@ -782,60 +836,60 @@ main{
         justify-content: space-evenly;
     }
 
-    /*html block*/
+    /*html block
     #skills #html5{
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
-    /*css block*/
+    /*css block
     #skills #css3{
         grid-column: 2/ 3;
         grid-row: 1 / 2;
     }
 
-    /*python block*/
+    /*python block
     #skills #python3{
 
         grid-column: 3 / 4;
         grid-row: 1 / 2;
     }
-    /*javascript*/
+    /*javascript
     #skills #javascript{
         grid-column: 4 / 5;
         grid-row: 1 / 2;
     }
-    /*sql*/
+    /*sql
     #skills #sql{
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
-    /*c block*/    
+    /*c block    
     #skills #clang{
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
-    /*git block*/    
+    /*git block  
     #skills #git-vcs{
         grid-column: 3 / 4;
         grid-row: 2 / 3;
     }
-    /*github block*/    
+    /*github block    
     #skills #github{
         grid-column: 4 / 5;
         grid-row: 2 / 3;
     }
-    /*vscode block*/    
+    /*vscode block    
     #skills #vscode{
         grid-column: 1 / 2;
         grid-row: 3 / 4;
     }
-    /*netlify block*/    
+    /*netlify block  
     #skills #netlify{
         grid-column: 2 / 3;
         grid-row: 3 / 4;
     }
 
-    /*skill images*/
+    /*skill images
     #skills #skill-body img{
         width: 6em;
     }
