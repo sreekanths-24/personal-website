@@ -19,13 +19,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 //typed
 var typed = new Typed('.typing', {
     strings: [
-        'am a Front End Developer.', 
+        'am a Full Stack Web Developer.', 
         'am Sreekanth S.', 
         'am a Computer Science Engineer.',
         'love learning new things.',
         'am into Web Development.',
-        'am into Artificial Intelligence.',
-        'am into Cloud Computing.'
+        'am into Artificial Intelligence.'
     ],
     smartBackspace: true,
     typeSpeed: 60,
