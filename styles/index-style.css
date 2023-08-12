@@ -4,6 +4,9 @@
         display: none;
     }
 } 
+body{
+    background-color: #d1ebff;
+}
 /*=========== common view all button ================*/
 .next-page-button-section{
     text-align: center;
@@ -483,8 +486,9 @@ main{
     -moz-background-attachment: fixed;
     -o-background-attachment: fixed;
     background-attachment: fixed;
-    height: 300px;
+    height: 400px;
     position: relative;
+    border-radius: 50px;
 }
 @media screen and (min-width: 500px){
     #parallax1{
@@ -626,16 +630,27 @@ main{
 /*===================skills============================*/
 #skills{
     background-image: linear-gradient(#37caec,#d1ebff);
-
+    padding: 2em 0.5em;
 }
 #skills h1{
     font-size: 2.5rem;
     display: block;
     margin-left: 20px;
 }
+.skill-body{
+    border-radius: 70px;
+    padding: 2.5em 1em;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .new-skill-body{
-    padding: 20px;
+    padding: 2em 4em;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 @media screen and (max-width:330px){
@@ -658,7 +673,8 @@ main{
 @media screen and (min-width: 992px){
     
     #skills{
-        background-image: linear-gradient(#37caec, white);    
+    background-image: linear-gradient(#37caec,white);
+
         text-align: center;
     }
     .new-skill-body{
@@ -673,238 +689,10 @@ main{
         font-size: 3rem;
     }
 
+}
     /* #skills #skill-body .skill-block h2{
         font-size: 2rem;
     } */
-}
-/*===================skills============================
-#skills{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto auto;
-    background-image: linear-gradient(#37caec,#d1ebff);
-    
-}
-
-#skill-head{
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-}
-
-#skills h1{
-    font-size: 2.5rem;
-    display: block;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-#skill-body{
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto auto auto auto;
-    padding: 10px; 
-    margin: 20px 0;
-}
-
-.card-holder{
-    background-color: transparent;
-
-}
-
-#skills .skill-block{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/*html block
-#skills #html5{
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-}
-/*css block
-#skills #css3{
-    grid-column: 4 / -1;
-    grid-row: 1 / 2;
-}
-
-/*javascript
-#skills #javascript{
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-}
-/*sql
-#skills #sql{
-    grid-column: 4 / -1;
-    grid-row: 2 / 3;
-}
-
-/*python block
-#skills #python3{
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-}
-/*c block  
-#skills #clang{
-    grid-column: 4 / -1;
-    grid-row: 3 / 4;
-}
-
-/*vscode block
-#skills #vscode{
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
-}
-
-/*netlify/
-#skills #netlify{
-    grid-column: 4 / -1;
-    grid-row: 4 / 5;
-}
-/*git block*    
-#skills #git-vcs{
-    grid-column: 1 / 4;
-    grid-row: 5 / 6;
-}
-/*github block    
-#skills #github{
-    grid-column: 4 / -1;
-    grid-row: 5 / 6;
-}
-
-/*skill images
-#skills #skill-body img{
-    width: 60px;
-    height: auto;
-}
-
-.card{
-    width: 15em;
-    max-width: 170px;
-    height: auto;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-#skills #view-more-skill{
-    grid-column: 1 / -1;
-    grid-row: 3 / -1;
-}
-
-@media screen and (max-width:330px){
-    #skills h1{
-        font-size: 2rem;
-    }
-    
-    /*skill images
-    #skills #skill-body img{
-        width: 50px;
-    }
-
-    .card h2{
-        font-size: 1.3rem;
-    }
-}
-@media screen and (min-width: 992px){
-    .card{
-        width: 100%;
-    }
-
-    #skills{
-        background-image: linear-gradient(#37caec, white);
-
-        min-height: 100vh;
-
-    }
-
-    #skill-body{
-        grid-template-columns: repeat(4 , 1fr);
-        grid-template-rows: auto auto auto;
-    }
-
-    #skills #skill-head{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    /*html block
-    #skills #html5{
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-    /*css block
-    #skills #css3{
-        grid-column: 2/ 3;
-        grid-row: 1 / 2;
-    }
-
-    /*python block
-    #skills #python3{
-
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-    }
-    /*javascript
-    #skills #javascript{
-        grid-column: 4 / 5;
-        grid-row: 1 / 2;
-    }
-    /*sql
-    #skills #sql{
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-    /*c block    
-    #skills #clang{
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
-    /*git block  
-    #skills #git-vcs{
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-    }
-    /*github block    
-    #skills #github{
-        grid-column: 4 / 5;
-        grid-row: 2 / 3;
-    }
-    /*vscode block    
-    #skills #vscode{
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-    }
-    /*netlify block  
-    #skills #netlify{
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
-    }
-
-    /*skill images
-    #skills #skill-body img{
-        width: 6em;
-    }
-
-}
-@media screen and (min-width: 1400px){
-    #skills h1{
-        font-size: 3rem;
-    }
-
-    #skills #skill-body .skill-block h2{
-        font-size: 2rem;
-    }
-}
-
 /*=================portfolio======================*/
 
 /* =================
@@ -1277,6 +1065,8 @@ footer{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, auto);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 footer .thanks{
@@ -1364,6 +1154,10 @@ footer .quick-nav-links a{
 }
 
 @media screen and (min-width: 900px){
+    footer{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
 
     footer .quick-links{
         display: none;
