@@ -408,7 +408,6 @@ body{
     background-attachment: fixed;
     height: 400px;
     position: relative;
-    border-radius: 50px;
 }
 @media screen and (min-width: 500px){
     #parallax1{
@@ -558,7 +557,9 @@ body{
     margin-left: 20px;
 }
 .skill-body{
-    border-radius: 70px;
+    max-width: 600px;
+    border-radius: 40px;
+    margin: 0 auto;
     padding: 2.5em 1em;
     background-color: whitesmoke;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -582,7 +583,6 @@ body{
     #skills #skill-body img{
         width: 50px;
     }*/
-
     .new-skill-body{
         padding: 1em;
     }
@@ -597,8 +597,13 @@ body{
 
         text-align: center;
     }
+    
+    .skill-body{
+        border-radius: 20px;
+
+    }    
     .new-skill-body{
-        padding: 3em 10em;
+        padding: 3em;
         width: 100%;
     
     }
@@ -985,8 +990,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, auto);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+
 }
 
 footer .thanks{

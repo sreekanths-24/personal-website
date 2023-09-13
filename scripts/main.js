@@ -39,14 +39,12 @@ var typed = new Typed('.typing', {
 ScrollReveal().reveal(".cards",{
     easing: 'ease-out',
     scale: 0.5,
-    reset: true,
     duration: 400
 });
 ScrollReveal().reveal(".cards2",{
     interval: 200,
     easing: 'ease-out',
     scale: 0.5,
-    reset: true,
     duration: 400
 });
 
@@ -54,7 +52,6 @@ ScrollReveal().reveal(".ed-card",{
     easing: 'ease',
     origin:'bottom',
     distance:'80px',
-    reset: true,
     duration: 400
 });
 
