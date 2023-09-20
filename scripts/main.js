@@ -19,8 +19,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 //typed
 var typed = new Typed('.typing', {
     strings: [
-        'am a Full Stack Web Developer.', 
         'am Sreekanth S.', 
+        'am a Full Stack Web Developer.', 
         'am a Computer Science Engineer.',
         'love learning new things.',
         'am into Web Development.',
